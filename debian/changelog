@@ -1,3 +1,10 @@
+gnome-icon-theme (1.2.0-2) experimental; urgency=low
+
+  * GNOME team upload.
+  * debian/control.in: fix typo in Depends line (thanks JHM).
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 26 Mar 2004 14:13:08 +0100
+
 gnome-icon-theme (1.2.0-1) experimental; urgency=low
 
   * Gnome Team Upload.
