@@ -9,7 +9,7 @@ Standards-Version: 3.6.1.0
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
-Depends: hicolor-icon-them
+Depends: hicolor-icon-theme
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
  Icons which are used for GNOME desktop theme.
