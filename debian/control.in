@@ -1,0 +1,15 @@
+Source: gnome-icon-theme
+Section: gnome
+Priority: optional
+Maintainer: Takuo KITAME <kitame@debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends-Indep: debhelper (>= 4.0), gettext, intltool (>= 0.28), hicolor-icon-theme, gnome-pkg-tools
+Standards-Version: 3.6.1.0
+
+Package: gnome-icon-theme
+Architecture: all
+Section: gnome
+Depends: hicolor-icon-them
+Enhances: nautilus (>= 2.2)
+Description: GNOME Desktop icon theme
+ Icons which are used for GNOME desktop theme.
