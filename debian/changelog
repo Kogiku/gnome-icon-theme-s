@@ -1,9 +1,31 @@
-gnome-icon-theme (1.2.3-2) unstable; urgency=low
+gnome-icon-theme (2.8.0-2) unstable; urgency=low
 
   * postinst, prerm: use gtk-update-icon-cache to update icon-theme.cache
     files.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 16 Feb 2005 19:46:35 +0100
+
+gnome-icon-theme (2.8.0-1) unstable; urgency=low
+
+  * GNOME Team Upload.
+  * Acknowledge the NMU, thanks Steve (Closes: #275570).
+  * New upstream release.
+  * debian/gnome-icon-theme.links:
+    - added a link to the new mime for word file, should fix the problem with 
+      the icons used in nautilus.
+  * debian/watch:
+    - added.
+
+ -- Sebastien Bacher <seb128@debian.org>  Tue, 16 Nov 2004 11:58:43 +0100
+
+gnome-icon-theme (1.2.3-1.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * High-urgency upload for sarge-targetted RC bugfix.
+  * Document Replaces: kdebase, to allow smooth upgrades from woody
+    (closes: #275570).
+
+ -- Steve Langasek <vorlon@debian.org>  Sun, 17 Oct 2004 16:46:50 -0700
 
 gnome-icon-theme (1.2.3-1) unstable; urgency=low
 
