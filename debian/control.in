@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Takuo KITAME <kitame@debian.org>
 Uploaders: @GNOME_TEAM@
-Build-Depends-Indep: debhelper (>= 4.1), cdbs, gettext, hicolor-icon-theme, gnome-pkg-tools
+Build-Depends-Indep: debhelper (>= 4.1), cdbs, gettext, hicolor-icon-theme, gnome-pkg-tools, libxml-parser-perl
 Standards-Version: 3.6.1.0
 
 Package: gnome-icon-theme

@@ -1,3 +1,9 @@
+gnome-icon-theme (2.8.0-4) unstable; urgency=low
+
+  * fix build-deps (add libxml-parser-perl)
+
+ -- Loic Minier <lool@dooz.org>  Mon, 28 Feb 2005 08:33:14 +0100
+
 gnome-icon-theme (2.8.0-3) unstable; urgency=low
 
   * postinst, prerm: removed; some other packages put icons in these
