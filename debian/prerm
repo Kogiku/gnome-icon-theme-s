@@ -1,8 +1,0 @@
-#! /bin/sh
-set -e
-
-#DEBHELPER#
-
-for theme in gnome hicolor; do
-    rm -f /usr/share/icons/${theme}/icon-theme.cache
-done
