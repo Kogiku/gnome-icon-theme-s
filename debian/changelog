@@ -1,3 +1,17 @@
+gnome-icon-theme (1.2.1-2) unstable; urgency=low
+
+  * GNOME Team Upload.
+  * Upload to unstable. 
+
+ -- Sebastien Bacher <seb128@debian.org>  Sat, 22 May 2004 14:44:24 +0200
+
+gnome-icon-theme (1.2.1-1) experimental; urgency=low
+
+  * GNOME Team Upload.
+  * New upstream release.
+
+ -- Sebastien Bacher <seb128@debian.org>  Sat, 15 May 2004 12:52:30 +0200
+
 gnome-icon-theme (1.2.0-2) experimental; urgency=low
 
   * GNOME team upload.
