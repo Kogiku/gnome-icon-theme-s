@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+#DEBHELPER#
+
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    for theme in hicolor gnome; do
+        gtk-update-icon-cache /usr/share/icons/$theme
+    done
+fi

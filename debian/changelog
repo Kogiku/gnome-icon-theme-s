@@ -1,3 +1,10 @@
+gnome-icon-theme (1.2.3-2) unstable; urgency=low
+
+  * postinst, prerm: use gtk-update-icon-cache to update icon-theme.cache
+    files.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 16 Feb 2005 19:46:35 +0100
+
 gnome-icon-theme (1.2.3-1) unstable; urgency=low
 
   * GNOME Team Upload.
