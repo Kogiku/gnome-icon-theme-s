@@ -1,8 +1,11 @@
 gnome-icon-theme (2.8.0-4) unstable; urgency=low
 
-  * fix build-deps (add libxml-parser-perl)
+  * Changes by Loïc Minier <lool@dooz.org>:
+    + Fix build-deps, adding libxml-parser-perl (closes: #297241).
+  * Changes by Josselin Mouette:
+    + control.in: include a decent description (closes: #207430, #209509).
 
- -- Loic Minier <lool@dooz.org>  Mon, 28 Feb 2005 08:33:14 +0100
+ -- Josselin Mouette <joss@debian.org>  Wed,  2 Mar 2005 00:36:57 +0100
 
 gnome-icon-theme (2.8.0-3) unstable; urgency=low
 
