@@ -1,0 +1,4 @@
+version=2
+ftp://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme/1.2/ \
+        gnome-icon-theme-(.*)\.tar\.gz \
+        debian uupdate
