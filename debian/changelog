@@ -2,8 +2,10 @@ gnome-icon-theme (2.8.0-3) unstable; urgency=low
 
   * postinst, prerm: removed; some other packages put icons in these
     directories.
+  * rules: use cdbs.
+  * control.in: update build dependencies.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 27 Feb 2005 15:53:29 +0100
+ -- Josselin Mouette <joss@debian.org>  Sun, 27 Feb 2005 16:26:17 +0100
 
 gnome-icon-theme (2.8.0-2) unstable; urgency=low
 
