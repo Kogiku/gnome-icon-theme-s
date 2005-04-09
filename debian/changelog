@@ -1,3 +1,15 @@
+gnome-icon-theme (2.10.0-1) experimental; urgency=low
+
+  * New upstream version.
+  * debian/control.in:
+    - replaces gnome-panel-data (<= 2.9.91-1).
+  * debian/gnome-icon-theme.links:
+    - fix the python icon.
+  * debian/watch:
+    - updated.
+
+ -- Sebastien Bacher <seb128@debian.org>  Sat,  9 Apr 2005 14:32:18 +0200
+
 gnome-icon-theme (2.8.0-4) unstable; urgency=low
 
   * Changes by Loïc Minier <lool@dooz.org>:
