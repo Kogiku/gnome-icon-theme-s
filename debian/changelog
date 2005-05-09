@@ -1,3 +1,10 @@
+gnome-icon-theme (2.10.1-1) experimental; urgency=low
+
+  * GNOME team upload.
+  * New upstream version.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon,  9 May 2005 14:07:55 +0200
+
 gnome-icon-theme (2.10.0-1) experimental; urgency=low
 
   * New upstream version.
