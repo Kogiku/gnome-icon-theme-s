@@ -1,3 +1,10 @@
+gnome-icon-theme (2.10.1-3) unstable; urgency=low
+
+  * Remove /usr/share/icons/Default symlink which causes issue in the
+    graphical selector. (Closes: #331230) [debian/gnome-icon-theme.links]
+
+ -- Loic Minier <lool@dooz.org>  Sun,  2 Oct 2005 16:20:28 +0200
+
 gnome-icon-theme (2.10.1-2) unstable; urgency=low
 
   * Upload to unstable.
