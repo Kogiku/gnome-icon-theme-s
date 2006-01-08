@@ -4,12 +4,12 @@ Priority: optional
 Maintainer: Takuo KITAME <kitame@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends-Indep: debhelper (>= 4.1), cdbs, gettext, hicolor-icon-theme, gnome-pkg-tools, libxml-parser-perl
-Standards-Version: 3.6.1.0
+Standards-Version: 3.6.2
 
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
-Depends: hicolor-icon-theme
+Depends: hicolor-icon-theme, librsvg2-common
 Replaces: kdebase (<< 4:3.2.2-1), gnome-panel-data (<= 2.9.91-1)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
