@@ -1,12 +1,13 @@
-gnome-icon-theme (2.14.2-2) UNRELEASED; urgency=low
+gnome-icon-theme (2.14.2-2) unstable; urgency=low
 
   * Move debhelper, cdbs, and gnome-pkg-tools from Build-Depends-Indep to
     Build-Depends.
   * Bump up Standards-Version to 3.7.2.
   * Add ${misc:Depends}.
   * Bump up Debhelper compatibility level to 5.
+  * Add CDBS' utils.
 
- -- Loic Minier <lool@dooz.org>  Sun, 13 Aug 2006 15:46:08 +0200
+ -- Loic Minier <lool@dooz.org>  Sun, 13 Aug 2006 15:48:38 +0200
 
 gnome-icon-theme (2.14.2-1) unstable; urgency=low
 
