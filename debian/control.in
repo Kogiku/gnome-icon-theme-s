@@ -5,7 +5,7 @@ Maintainer: Josselin Mouette <joss@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper (>= 4.1), cdbs, gnome-pkg-tools
 Build-Depends-Indep: gettext, hicolor-icon-theme, libxml-parser-perl
-Standards-Version: 3.6.2
+Standards-Version: 3.7.2
 
 Package: gnome-icon-theme
 Architecture: all
