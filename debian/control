@@ -10,7 +10,7 @@ Standards-Version: 3.7.2
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
-Depends: hicolor-icon-theme, librsvg2-common
+Depends: ${misc:Depends}, hicolor-icon-theme, librsvg2-common
 Replaces: kdebase (<< 4:3.2.2-1), gnome-panel-data (<= 2.9.91-1)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
