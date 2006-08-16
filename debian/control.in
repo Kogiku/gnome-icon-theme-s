@@ -1,15 +1,16 @@
 Source: gnome-icon-theme
 Section: gnome
 Priority: optional
-Maintainer: Takuo KITAME <kitame@debian.org>
+Maintainer: Josselin Mouette <joss@debian.org>
 Uploaders: @GNOME_TEAM@
-Build-Depends-Indep: debhelper (>= 4.1), cdbs, gettext, hicolor-icon-theme, gnome-pkg-tools, libxml-parser-perl
-Standards-Version: 3.6.2
+Build-Depends: debhelper (>= 5), cdbs, gnome-pkg-tools
+Build-Depends-Indep: gettext, hicolor-icon-theme, libxml-parser-perl, pkg-config, icon-naming-utils (>= 0.8.0)
+Standards-Version: 3.7.2
 
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
-Depends: hicolor-icon-theme, librsvg2-common
+Depends: ${misc:Depends}, hicolor-icon-theme, librsvg2-common
 Replaces: kdebase (<< 4:3.2.2-1), gnome-panel-data (<= 2.9.91-1)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme

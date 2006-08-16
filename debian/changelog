@@ -1,8 +1,36 @@
-gnome-icon-theme (2.12.1-2) UNRELEASED; urgency=low
+gnome-icon-theme (2.15.91-1) experimental-WIP; urgency=low
+
+  * New upstream development releases.
+    - Target at experimental.
+    - Add pkg-config and icon-naming-utils (>= 0.8.0) build-deps.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 13 Aug 2006 15:53:54 +0200
+
+gnome-icon-theme (2.14.2-2) unstable; urgency=low
+
+  * Move debhelper, cdbs, and gnome-pkg-tools from Build-Depends-Indep to
+    Build-Depends.
+  * Bump up Standards-Version to 3.7.2.
+  * Add ${misc:Depends}.
+  * Bump up Debhelper compatibility level to 5.
+  * Add CDBS' utils.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 13 Aug 2006 15:48:38 +0200
+
+gnome-icon-theme (2.14.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set myself as maintainer.
+  * Update watch file.
+
+ -- Josselin Mouette <joss@debian.org>  Mon,  3 Apr 2006 21:48:34 +0200
+
+gnome-icon-theme (2.12.1-2) unstable; urgency=low
 
   * Depend on librsvg2-common for SVG icons.
+  * Upload to unstable.
 
- -- Josselin Mouette <joss@debian.org>  Tue, 11 Oct 2005 23:05:28 +0200
+ -- Josselin Mouette <joss@debian.org>  Sun,  8 Jan 2006 12:31:14 +0100
 
 gnome-icon-theme (2.12.1-1) experimental; urgency=low
 
