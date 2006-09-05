@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper (>= 5), cdbs, gnome-pkg-tools
-Build-Depends-Indep: gettext, hicolor-icon-theme, libxml-parser-perl, pkg-config, icon-naming-utils (>= 0.8.0)
+Build-Depends-Indep: gettext, hicolor-icon-theme, libxml-parser-perl, pkg-config, icon-naming-utils (>= 0.8.1)
 Standards-Version: 3.7.2
 
 Package: gnome-icon-theme
