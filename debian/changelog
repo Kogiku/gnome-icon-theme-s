@@ -1,3 +1,9 @@
+gnome-icon-theme (2.16.0.1-2) UNRELEASED; urgency=low
+
+  * Fix watch file to track stable releases and use HTTP.
+
+ -- Loic Minier <lool@dooz.org>  Tue, 21 Nov 2006 17:21:43 +0100
+
 gnome-icon-theme (2.16.0.1-1) experimental; urgency=low
 
   * New upstream releases.
