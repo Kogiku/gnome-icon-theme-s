@@ -1,3 +1,9 @@
+gnome-icon-theme (2.14.2-3) UNRELEASED; urgency=low
+
+  * Add a get-orig-source target to retrieve the upstream tarball.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 13 Jan 2007 23:28:54 +0100
+
 gnome-icon-theme (2.14.2-2) unstable; urgency=low
 
   * Move debhelper, cdbs, and gnome-pkg-tools from Build-Depends-Indep to
