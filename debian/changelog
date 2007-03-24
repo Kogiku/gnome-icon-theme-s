@@ -1,3 +1,9 @@
+gnome-icon-theme (2.18.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sat, 24 Mar 2007 19:31:46 +0100
+
 gnome-icon-theme (2.16.1-2) experimental; urgency=low
 
   * Add a get-orig-source target to retrieve the upstream tarball.
