@@ -2,8 +2,9 @@ gnome-icon-theme (2.18.0-2) UNRELEASED; urgency=low
 
   * Upload to unstable; drop check-dist include.
   * Wrap build-deps and deps.
+  * Fix URL in copyright.
 
- -- Loic Minier <lool@dooz.org>  Tue, 24 Apr 2007 17:40:38 +0200
+ -- Loic Minier <lool@dooz.org>  Tue, 24 Apr 2007 17:43:48 +0200
 
 gnome-icon-theme (2.18.0-1) experimental; urgency=low
 
