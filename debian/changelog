@@ -1,3 +1,10 @@
+gnome-icon-theme (2.18.0-3) UNRELEASED; urgency=low
+
+  * Drop 48x48 symlink for gnome-mime-application-vnd.ms-word; thanks giggz;
+    closes: #421383.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 29 Apr 2007 00:00:10 +0200
+
 gnome-icon-theme (2.18.0-2) unstable; urgency=low
 
   * Upload to unstable; drop check-dist include.
