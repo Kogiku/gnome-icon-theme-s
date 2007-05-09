@@ -5,10 +5,12 @@ gnome-icon-theme (2.18.0-3) UNRELEASED; urgency=low
     closes: #421383.
 
   [ Josselin Mouette ]
-  * Include gnome-mime-application-vnd.ms-word links for 22x22 and 24x24 
+  * Include gnome-mime-application-vnd.ms-word links for 22x22 and 24x24
     sizes.
+  * Conflict with gnome-panel < 2.18 and gnome-themes-extras < 
+    0.9.0.deb0.1 (closes: #422933).
 
- -- Josselin Mouette <joss@debian.org>  Mon, 30 Apr 2007 15:18:02 +0200
+ -- Josselin Mouette <joss@debian.org>  Wed, 09 May 2007 10:32:35 +0200
 
 gnome-icon-theme (2.18.0-2) unstable; urgency=low
 
