@@ -1,0 +1,12 @@
+diff -Nur gnome-icon-theme-2.15.92/index.theme.in gnome-icon-theme-2.15.92.new/index.theme.in
+--- gnome-icon-theme-2.15.92/index.theme.in	2006-08-02 16:55:41.000000000 +0200
++++ gnome-icon-theme-2.15.92.new/index.theme.in	2006-09-02 11:49:29.000000000 +0200
+@@ -352,7 +352,7 @@
+ [48x48/apps]
+ Size=48
+ Context=Applications
+-Type=Fixed
++Type=Scalable
+ 
+ [48x48/categories]
+ Size=48
