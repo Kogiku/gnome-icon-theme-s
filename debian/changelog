@@ -1,3 +1,11 @@
+gnome-icon-theme (2.20.0-2) UNRELEASED; urgency=low
+
+  * debian/patches/01_apps_icons_scalable.patch:
+    + Drop accidentially included patch that was just added for testing
+      purposes and was forgotten to be removed for the final upload.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 21 Sep 2007 10:15:33 +0200
+
 gnome-icon-theme (2.20.0-1) unstable; urgency=low
 
   * New upstream release:
