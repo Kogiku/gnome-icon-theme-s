@@ -8,7 +8,6 @@ Build-Depends: debhelper (>= 5),
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
-                     libxml-parser-perl,
                      intltool (>= 0.40.0),
                      pkg-config,
                      icon-naming-utils (>= 0.8.7)

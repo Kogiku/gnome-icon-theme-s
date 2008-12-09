@@ -5,8 +5,11 @@ gnome-icon-theme (2.24.0-1) experimental; urgency=low
     + Update Standards-Version to 3.8.0, no additional changes needed.
     + Bump icon-naming-utils minimum build dependency to (>= 0.8.7).
     + Add intltool (>= 0.40.0) build dependency
+    + Dropped libxml-parser-perl build dependency
   * debian/copyright:
     + Updated to reflect AUTHORS
+    + Change downloaded from URL to
+      <http://download.gnome.org/sources/gnome-icon-theme/>
 
  -- Luca Bruno <lethalman88@gmail.com>  Mon, 08 Dec 2008 11:02:28 +0100
 
