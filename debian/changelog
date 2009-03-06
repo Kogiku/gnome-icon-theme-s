@@ -1,3 +1,9 @@
+gnome-icon-theme (2.24.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 06 Mar 2009 17:58:48 +0100
+
 gnome-icon-theme (2.24.0-1) experimental; urgency=low
 
   * New upstream release.
