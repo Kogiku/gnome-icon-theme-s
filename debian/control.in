@@ -8,10 +8,10 @@ Build-Depends: debhelper (>= 5),
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
-                     libxml-parser-perl,
+                     intltool (>= 0.40.0),
                      pkg-config,
-                     icon-naming-utils (>= 0.8.6)
-Standards-Version: 3.7.3
+                     icon-naming-utils (>= 0.8.7)
+Standards-Version: 3.8.0
 
 Package: gnome-icon-theme
 Architecture: all
