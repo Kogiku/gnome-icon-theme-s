@@ -1,3 +1,11 @@
+gnome-icon-theme (2.24.0-3) unstable; urgency=low
+
+  * debian/start-here.svg: ship a Debian/GNOME logo for the menu.
+  * rules: replace the standard icons with it. Closes: #516566.
+  * Standards version is 3.8.1.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 20 Mar 2009 00:33:37 +0100
+
 gnome-icon-theme (2.24.0-2) unstable; urgency=low
 
   * Upload to unstable.

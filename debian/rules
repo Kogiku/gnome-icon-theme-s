@@ -6,3 +6,23 @@ include /usr/share/cdbs/1/class/gnome.mk
 include /usr/share/cdbs/1/rules/utils.mk
 include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 -include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+
+BITMAPS := $(shell ls | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
+
+post-patches::
+	test -f scalable/places/start-here.svg.saved || mv scalable/places/start-here.svg scalable/places/start-here.svg.saved
+	cp debian/start-here.svg scalable/places/start-here.svg
+	for i in $(BITMAPS); do \
+		d=$${i}x$${i} ; \
+		if [ -d $$d/places ]; then \
+			test -f $$d/places/start-here.png.saved || mv $$d/places/start-here.png $$d/places/start-here.png.saved ; \
+			rsvg-convert -w $$i -h $$i -o $$d/places/start-here.png debian/start-here.svg ; \
+		fi ; \
+	done
+
+clean::
+	-test -f scalable/places/start-here.svg.saved && mv scalable/places/start-here.svg.saved scalable/places/start-here.svg
+	-for i in $(BITMAPS); do \
+		d=$${i}x$${i} ; \
+		test -f $$d/places/start-here.png.saved && mv $$d/places/start-here.png.saved $$d/places/start-here.png ; \
+	done
