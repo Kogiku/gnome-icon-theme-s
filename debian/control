@@ -10,8 +10,9 @@ Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
                      intltool (>= 0.40.0),
                      pkg-config,
-                     icon-naming-utils (>= 0.8.7)
-Standards-Version: 3.8.0
+                     icon-naming-utils (>= 0.8.7),
+                     librsvg2-bin
+Standards-Version: 3.8.1
 
 Package: gnome-icon-theme
 Architecture: all

@@ -1,3 +1,9 @@
+gnome-icon-theme (2.24.0-4) UNRELEASED; urgency=low
+
+  * Add missing build-dependency on librsvg2-bin.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 20 Mar 2009 09:56:10 +0100
+
 gnome-icon-theme (2.24.0-3) unstable; urgency=low
 
   * debian/start-here.svg: ship a Debian/GNOME logo for the menu.
