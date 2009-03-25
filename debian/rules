@@ -9,20 +9,16 @@ include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 
 BITMAPS := $(shell ls | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
-post-patches::
-	test -f scalable/places/start-here.svg.saved || mv scalable/places/start-here.svg scalable/places/start-here.svg.saved
-	cp debian/start-here.svg scalable/places/start-here.svg
+INSTDIR := $(CURDIR)/debian/gnome-icon-theme/usr/share/icons/gnome
+
+install/gnome-icon-theme::
+	mv $(INSTDIR)/scalable/places/start-here.svg $(INSTDIR)/scalable/places/gnome-foot.svg
+	cp debian/debian-swirl.svg debian/swirl-foot.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
 		d=$${i}x$${i} ; \
-		if [ -d $$d/places ]; then \
-			test -f $$d/places/start-here.png.saved || mv $$d/places/start-here.png $$d/places/start-here.png.saved ; \
-			rsvg-convert -w $$i -h $$i -o $$d/places/start-here.png debian/start-here.svg ; \
+		if [ -d $(INSTDIR)/$$d/places ]; then \
+			mv $(INSTDIR)/$$d/places/start-here.png $(INSTDIR)/$$d/places/gnome-foot.png ; \
+			rsvg-convert -w $$i -h $$i -o $(INSTDIR)/$$d/places/debian-swirl.png debian/debian-swirl.svg ; \
+			rsvg-convert -w $$i -h $$i -o $(INSTDIR)/$$d/places/swirl-foot.png debian/swirl-foot.svg ; \
 		fi ; \
-	done
-
-clean::
-	-test -f scalable/places/start-here.svg.saved && mv scalable/places/start-here.svg.saved scalable/places/start-here.svg
-	-for i in $(BITMAPS); do \
-		d=$${i}x$${i} ; \
-		test -f $$d/places/start-here.png.saved && mv $$d/places/start-here.png.saved $$d/places/start-here.png ; \
 	done

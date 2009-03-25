@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
+  for name in debian-swirl gnome-foot swirl-foot; do
+    update-alternatives --remove start-here.svg /usr/share/icons/gnome/scalable/places/$name.svg
+  done
+fi
+
+#DEBHELPER#
