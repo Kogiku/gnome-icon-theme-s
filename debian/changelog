@@ -1,4 +1,4 @@
-gnome-icon-theme (2.24.0-4) UNRELEASED; urgency=low
+gnome-icon-theme (2.24.0-4) unstable; urgency=low
 
   * Add missing build-dependency on librsvg2-bin.
   * start-here.svg: fix the colors so that they match the original 
@@ -8,8 +8,13 @@ gnome-icon-theme (2.24.0-4) UNRELEASED; urgency=low
     debian-swirl.svg icon.
   * Use alternatives to select the default icon, the highest priority 
     goes to debian-swirl according to the poll. Closes: #516566.
+  * Handle icon caches by hand; pass --no-act to dh_icons.
+    Closes: #484684.
+  * Register a trigger so that the cache is regerenerated when 
+    necessary.
+  * Depend on libgtk2.0-bin to have gtk-update-icon-cache.
 
- -- Josselin Mouette <joss@debian.org>  Fri, 20 Mar 2009 09:56:10 +0100
+ -- Josselin Mouette <joss@debian.org>  Wed, 25 Mar 2009 15:02:01 +0100
 
 gnome-icon-theme (2.24.0-3) unstable; urgency=low
 

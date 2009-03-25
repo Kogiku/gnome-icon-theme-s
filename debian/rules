@@ -11,6 +11,8 @@ BITMAPS := $(shell ls | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
 INSTDIR := $(CURDIR)/debian/gnome-icon-theme/usr/share/icons/gnome
 
+DEB_DH_ICONS_ARGS := --no-act
+
 install/gnome-icon-theme::
 	mv $(INSTDIR)/scalable/places/start-here.svg $(INSTDIR)/scalable/places/gnome-foot.svg
 	cp debian/debian-swirl.svg debian/swirl-foot.svg $(INSTDIR)/scalable/places/

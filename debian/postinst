@@ -1,6 +1,20 @@
 #! /bin/sh
 set -e
 
+write_cache()
+{
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    if ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome; then
+        echo "WARNING: icon cache generation failed"
+    fi
+fi
+}
+
+if [ "$1" = "triggered" ]; then
+    write_cache
+    exit 0
+fi
+
 SIZES=$(ls /usr/share/icons/gnome/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p')
 
 ( while read name prio; do
@@ -14,5 +28,7 @@ debian-swirl 30
 gnome-foot 20
 swirl-foot 20
 EOF
+
+write_cache
 
 #DEBHELPER#

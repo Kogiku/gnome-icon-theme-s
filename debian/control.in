@@ -19,6 +19,7 @@ Architecture: all
 Section: gnome
 Depends: ${misc:Depends},
          hicolor-icon-theme,
+         libgtk2.0-bin,
          librsvg2-common
 Replaces: kdebase (<< 4:3.2.2-1),
           gnome-panel-data (<= 2.9.91-1)
