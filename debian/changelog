@@ -1,3 +1,9 @@
+gnome-icon-theme (2.24.0-5) UNRELEASED; urgency=low
+
+  * README.Debian: document how to change the main menu icon.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 30 Mar 2009 11:29:58 +0200
+
 gnome-icon-theme (2.24.0-4) unstable; urgency=low
 
   * Add missing build-dependency on librsvg2-bin.
