@@ -14,6 +14,7 @@ INSTDIR := $(CURDIR)/debian/gnome-icon-theme/usr/share/icons/gnome
 DEB_DH_ICONS_ARGS := --no-act
 
 install/gnome-icon-theme::
+	rm -rf $(CURDIR)/debian/gnome-icon-theme/usr/share/locale
 	mv $(INSTDIR)/scalable/places/start-here.svg $(INSTDIR)/scalable/places/gnome-foot.svg
 	cp debian/debian-swirl.svg debian/swirl-foot.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
