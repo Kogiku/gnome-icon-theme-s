@@ -1,3 +1,11 @@
+gnome-icon-theme (2.28.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control.in:
+    - bumped standards-version to 3.8.3. No changes needed.
+
+ -- Andrea Veri <andrea.veri89@gmail.com>  Mon, 28 Sep 2009 20:45:42 +0200
+
 gnome-icon-theme (2.26.0-1) unstable; urgency=low
 
   [ Josselin Mouette ]
