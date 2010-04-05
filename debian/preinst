@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" lt-nl 2.30.0-1; then
+  SIZES=$(ls /usr/share/icons/gnome/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p')
+  ( while read name prio; do
+      update-alternatives --remove start-here.svg /usr/share/icons/gnome/scalable/places/$name.svg 2> /dev/null || true
+    done ) << EOF
+debian-swirl 30
+gnome-foot 20
+swirl-foot 20
+EOF
+
+fi
+
+#DEBHELPER#
