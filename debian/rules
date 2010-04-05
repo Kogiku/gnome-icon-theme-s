@@ -7,7 +7,7 @@ include /usr/share/cdbs/1/rules/utils.mk
 include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 -include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
-BITMAPS := $(shell ls | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
+BITMAPS := $(shell ls gnome | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
 INSTDIR := $(CURDIR)/debian/gnome-icon-theme/usr/share/icons/gnome
 
@@ -15,8 +15,6 @@ DEB_DH_ICONS_ARGS := --no-act
 
 install/gnome-icon-theme::
 	rm -rf $(CURDIR)/debian/gnome-icon-theme/usr/share/locale
-	mv $(INSTDIR)/scalable/places/start-here.svg $(INSTDIR)/scalable/places/gnome-foot.svg
-	cp debian/debian-swirl.svg debian/swirl-foot.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
 		d=$${i}x$${i} ; \
 		if [ -d $(INSTDIR)/$$d/places ]; then \

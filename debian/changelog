@@ -1,6 +1,8 @@
 gnome-icon-theme (2.30.0-1) unstable; urgency=low
 
-  * New upstream stable release.
+  * New upstream stable release:
+    + debian/rules:
+      - The SVG icons are not installed anymore.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 05 Apr 2010 18:14:52 +0200
 
