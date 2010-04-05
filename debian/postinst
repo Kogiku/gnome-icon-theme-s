@@ -15,10 +15,11 @@ if [ "$1" = "triggered" ]; then
     exit 0
 fi
 
-SIZES=$(ls /usr/share/icons/gnome/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p')
+SIZES=$(ls /usr/share/icons/gnome/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p' | grep -v 32)
 
+# use the 32x32 icon as start and slave all other sizes
 ( while read name prio; do
-    command="update-alternatives --install /usr/share/icons/gnome/scalable/places/start-here.svg start-here.svg /usr/share/icons/gnome/scalable/places/$name.svg $prio"
+    command="update-alternatives --install /usr/share/icons/gnome/32x32/places/start-here.png start-here-32.png /usr/share/icons/gnome/32x32/places/$name.png $prio"
     for s in $SIZES; do
       command="$command --slave /usr/share/icons/gnome/${s}x${s}/places/start-here.png start-here-${s}.png /usr/share/icons/gnome/${s}x${s}/places/$name.png"
     done
