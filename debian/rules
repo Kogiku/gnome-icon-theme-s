@@ -15,6 +15,8 @@ DEB_DH_ICONS_ARGS := --no-act
 
 install/gnome-icon-theme::
 	rm -rf $(CURDIR)/debian/gnome-icon-theme/usr/share/locale
+	mkdir -p $(INSTDIR)/scalable/places
+	cp debian/*.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
 		d=$${i}x$${i} ; \
 		if [ -d $(INSTDIR)/$$d/places ]; then \
