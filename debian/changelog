@@ -1,3 +1,9 @@
+gnome-icon-theme (2.30.2.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 29 Apr 2010 18:01:18 +0200
+
 gnome-icon-theme (2.30.2-1) unstable; urgency=low
 
   * New upstream bugfix release.
