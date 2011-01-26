@@ -1,3 +1,109 @@
+gnome-icon-theme (2.30.3-2) unstable; urgency=low
+
+  * Break evolution < 2.30 and gnome-games < 1:2.30.2-1.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 06 Nov 2010 20:38:14 +0100
+
+gnome-icon-theme (2.30.3-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 26 May 2010 16:33:11 +0200
+
+gnome-icon-theme (2.30.2.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 29 Apr 2010 18:01:18 +0200
+
+gnome-icon-theme (2.30.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 28 Apr 2010 14:16:53 +0200
+
+gnome-icon-theme (2.30.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 17 Apr 2010 10:13:20 +0200
+
+gnome-icon-theme (2.30.0-2) unstable; urgency=low
+
+  * Break netspeed << 0.15.2-2. Closes: #576840.
+  * Also break rhythmbox << 0.12.8.
+  * Distribute gnome-foot.svg from the 2.28 package.
+  * Install the SVG versions just for our three versions of start-here.
+  * Revert the alternative change. Closes: #576614.
+  * Keep a prerm for the moment to handle upgrades from 2.30.0-1.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 07 Apr 2010 22:00:27 +0200
+
+gnome-icon-theme (2.30.0-1) unstable; urgency=low
+
+  * New upstream stable release:
+    + debian/rules,
+      debian/preinst,
+      debian/postinst:
+      - The SVG icons are not installed anymore.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 05 Apr 2010 20:26:34 +0200
+
+gnome-icon-theme (2.28.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control.in:
+    - bumped standards-version to 3.8.3. No changes needed.
+
+ -- Andrea Veri <andrea.veri89@gmail.com>  Mon, 28 Sep 2009 20:45:42 +0200
+
+gnome-icon-theme (2.26.0-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * README.Debian: document how to change the main menu icon.
+
+  [ Luca Bruno ]
+  * New upstream release.
+  * debian/copyright:
+    - Specify GPL version 2.
+
+  [ Josselin Mouette ]
+  * Remove the bunch of empty directories in /usr/share/locale.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 29 May 2009 12:35:16 +0200
+
+gnome-icon-theme (2.24.0-4) unstable; urgency=low
+
+  * Add missing build-dependency on librsvg2-bin.
+  * start-here.svg: fix the colors so that they match the original 
+    Debian swirl, and integrate better.
+  * Rebuild against a recent icon-naming-utils. Closes: #514995.
+  * Rename start-here.svg to swirl-foot.svg, also provide a 
+    debian-swirl.svg icon.
+  * Use alternatives to select the default icon, the highest priority 
+    goes to debian-swirl according to the poll. Closes: #516566.
+  * Handle icon caches by hand; pass --no-act to dh_icons.
+    Closes: #484684.
+  * Register a trigger so that the cache is regerenerated when 
+    necessary.
+  * Depend on libgtk2.0-bin to have gtk-update-icon-cache.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 25 Mar 2009 15:02:01 +0100
+
+gnome-icon-theme (2.24.0-3) unstable; urgency=low
+
+  * debian/start-here.svg: ship a Debian/GNOME logo for the menu.
+  * rules: replace the standard icons with it. Closes: #516566.
+  * Standards version is 3.8.1.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 20 Mar 2009 00:33:37 +0100
+
+gnome-icon-theme (2.24.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 06 Mar 2009 17:58:48 +0100
+
 gnome-icon-theme (2.24.0-1) experimental; urgency=low
 
   * New upstream release.

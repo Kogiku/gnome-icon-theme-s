@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "upgrade" ] && [ "$2" = 2.30.0-1 ]; then
+  ( while read name prio; do
+      update-alternatives --remove start-here-32.png /usr/share/icons/gnome/32x32/places/$name.png 2> /dev/null || true
+    done ) << EOF
+debian-swirl 30
+gnome-foot 20
+swirl-foot 20
+EOF
+
+fi
+
+#DEBHELPER#
