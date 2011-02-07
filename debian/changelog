@@ -1,3 +1,17 @@
+gnome-icon-theme (2.91.6-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Update build dependencies.
+      - Remove old conflicts/replaces.
+    + debian/copyright:
+      - Updated for the new LGPL-3 | CC-BY-SA-3.0 license.
+  * debian/rules,
+    debian/source/format:
+    + Switch to source format 3.0 (quilt).
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 07 Feb 2011 22:17:45 +0000
+
 gnome-icon-theme (2.30.3-2) unstable; urgency=low
 
   * Break evolution < 2.30 and gnome-games < 1:2.30.2-1.
