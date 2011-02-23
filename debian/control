@@ -7,7 +7,7 @@ Source: gnome-icon-theme
 Section: gnome
 Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sebastian Dröge <slomo@debian.org>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Frederic Peters <fpeters@debian.org>, Sebastian Dröge <slomo@debian.org>
 Build-Depends: debhelper (>= 5),
                cdbs,
                gnome-pkg-tools (>= 0.10)
