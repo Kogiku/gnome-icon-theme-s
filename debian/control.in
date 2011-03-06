@@ -17,6 +17,7 @@ Standards-Version: 3.8.3
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
+Multi-Arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
          libgtk2.0-bin,

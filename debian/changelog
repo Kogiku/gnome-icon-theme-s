@@ -1,3 +1,9 @@
+gnome-icon-theme (2.30.3-3) UNRELEASED; urgency=low
+
+  * Set Multi-Arch: foreign.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 06 Mar 2011 10:55:46 +0100
+
 gnome-icon-theme (2.30.3-2) unstable; urgency=low
 
   * Break evolution < 2.30 and gnome-games < 1:2.30.2-1.
