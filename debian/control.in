@@ -12,7 +12,7 @@ Build-Depends-Indep: gettext,
                      libgtk2.0-bin,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin
-Standards-Version: 3.8.3
+Standards-Version: 3.9.2
 
 Package: gnome-icon-theme
 Architecture: all

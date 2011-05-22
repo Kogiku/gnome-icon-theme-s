@@ -6,6 +6,7 @@ gnome-icon-theme (3.0.0-2) UNRELEASED; urgency=low
   [ Martin Pitt ]
   * debian/postinst: Use gtk-update-icon-cache-3.0 instead of the 2.0 binary.
     Move libgtk2.0-bin dependency to libgtk-3-bin for this.
+  * debian/control.in: Bump Standards-Version to 3.9.2 (no changes necessary).
 
  -- Josselin Mouette <joss@debian.org>  Thu, 19 May 2011 00:41:23 +0200
 
