@@ -1,4 +1,4 @@
-gnome-icon-theme (3.0.0-2) UNRELEASED; urgency=low
+gnome-icon-theme (3.0.0-2) experimental; urgency=low
 
   [ Josselin Mouette ]
   * Remove icon-theme.cache from the package. Closes: #626515.
@@ -8,7 +8,7 @@ gnome-icon-theme (3.0.0-2) UNRELEASED; urgency=low
     Move libgtk2.0-bin dependency to libgtk-3-bin for this.
   * debian/control.in: Bump Standards-Version to 3.9.2 (no changes necessary).
 
- -- Josselin Mouette <joss@debian.org>  Thu, 19 May 2011 00:41:23 +0200
+ -- Martin Pitt <mpitt@debian.org>  Mon, 23 May 2011 07:49:01 +0200
 
 gnome-icon-theme (3.0.0-1) experimental; urgency=low
 
