@@ -6,6 +6,7 @@ gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
 
   [ Michael Biebl ]
   * debian/control.in: Add Vcs-* fields.
+  * Bump debhelper compatibility level to 8. Update Build-Depends accordingly.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 20 Jun 2011 23:57:18 +0200
 
