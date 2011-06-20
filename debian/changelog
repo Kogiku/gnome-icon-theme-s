@@ -1,4 +1,4 @@
-gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
+gnome-icon-theme (3.0.0-3) unstable; urgency=low
 
   [ Martin Pitt ]
   * debian/watch: Move to *.bz2, upstream does not release .gz tarballs any
@@ -8,7 +8,7 @@ gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
   * debian/control.in: Add Vcs-* fields.
   * Bump debhelper compatibility level to 8. Update Build-Depends accordingly.
 
- -- Michael Biebl <biebl@debian.org>  Mon, 20 Jun 2011 23:57:18 +0200
+ -- Michael Biebl <biebl@debian.org>  Tue, 21 Jun 2011 00:04:30 +0200
 
 gnome-icon-theme (3.0.0-2) experimental; urgency=low
 
