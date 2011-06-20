@@ -1,9 +1,13 @@
 gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
 
+  [ Martin Pitt ]
   * debian/watch: Move to *.bz2, upstream does not release .gz tarballs any
     more.
 
- -- Martin Pitt <mpitt@debian.org>  Tue, 31 May 2011 08:29:30 +0200
+  [ Michael Biebl ]
+  * debian/control.in: Add Vcs-* fields.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 20 Jun 2011 23:57:18 +0200
 
 gnome-icon-theme (3.0.0-2) experimental; urgency=low
 
