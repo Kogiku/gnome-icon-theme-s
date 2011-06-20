@@ -7,29 +7,24 @@ Source: gnome-icon-theme
 Section: gnome
 Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Sebastian Dröge <slomo@debian.org>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Frederic Peters <fpeters@debian.org>, Sebastian Dröge <slomo@debian.org>
 Build-Depends: debhelper (>= 5),
                cdbs,
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
-                     hicolor-icon-theme,
                      intltool (>= 0.40.0),
                      pkg-config,
+                     libgtk2.0-bin,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin
-Standards-Version: 3.8.3
+Standards-Version: 3.9.2
 
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
-Multi-Arch: foreign
 Depends: ${misc:Depends},
-         hicolor-icon-theme,
-         libgtk2.0-bin,
+         libgtk-3-bin,
          librsvg2-common
-Replaces: kdebase (<< 4:3.2.2-1),
-          gnome-panel-data (<= 2.9.91-1)
-Conflicts: gnome-panel (<< 2.18), gnome-themes-extras (<< 0.9.0.deb0.1)
 Breaks: netspeed (<< 0.15.2-2),
         rhythmbox (<< 0.12.8),
         evolution (<< 2.30),

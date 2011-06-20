@@ -1,8 +1,59 @@
-gnome-icon-theme (2.30.3-3) UNRELEASED; urgency=low
+gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
 
-  * Set Multi-Arch: foreign.
+  * debian/watch: Move to *.bz2, upstream does not release .gz tarballs any
+    more.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 06 Mar 2011 10:55:46 +0100
+ -- Martin Pitt <mpitt@debian.org>  Tue, 31 May 2011 08:29:30 +0200
+
+gnome-icon-theme (3.0.0-2) experimental; urgency=low
+
+  [ Josselin Mouette ]
+  * Remove icon-theme.cache from the package. Closes: #626515.
+
+  [ Martin Pitt ]
+  * debian/postinst: Use gtk-update-icon-cache-3.0 instead of the 2.0 binary.
+    Move libgtk2.0-bin dependency to libgtk-3-bin for this.
+  * debian/control.in: Bump Standards-Version to 3.9.2 (no changes necessary).
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 23 May 2011 07:49:01 +0200
+
+gnome-icon-theme (3.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Thu, 31 Mar 2011 10:22:43 +0530
+
+gnome-icon-theme (2.91.93-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Thu, 31 Mar 2011 09:53:44 +0530
+
+gnome-icon-theme (2.91.92-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Wed, 23 Mar 2011 22:54:12 +0100
+
+gnome-icon-theme (2.91.7-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Wed, 23 Feb 2011 21:03:35 +0100
+
+gnome-icon-theme (2.91.6-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Update build dependencies.
+      - Remove old conflicts/replaces.
+    + debian/copyright:
+      - Updated for the new LGPL-3 | CC-BY-SA-3.0 license.
+  * debian/rules,
+    debian/source/format:
+    + Switch to source format 3.0 (quilt).
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 07 Feb 2011 22:17:45 +0000
 
 gnome-icon-theme (2.30.3-2) unstable; urgency=low
 
