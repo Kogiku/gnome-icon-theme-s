@@ -25,7 +25,8 @@ Depends: ${misc:Depends},
 Breaks: netspeed (<< 0.15.2-2),
         rhythmbox (<< 0.12.8),
         evolution (<< 2.30),
-        gnome-games (<< 1:2.30.2-1)
+        gnome-games (<< 1:2.30.2-1),
+        mail-notification (<< 5.4.dfsg.1-2.2)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
  This package contains the default icon theme used by the GNOME desktop.

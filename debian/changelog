@@ -1,3 +1,9 @@
+gnome-icon-theme (3.0.0-4) UNRELEASED; urgency=low
+
+  * Add Breaks against mail-notification.
+
+ -- Josselin Mouette <joss@debian.org>  Tue, 28 Jun 2011 11:16:19 +0200
+
 gnome-icon-theme (3.0.0-3) unstable; urgency=low
 
   [ Martin Pitt ]
