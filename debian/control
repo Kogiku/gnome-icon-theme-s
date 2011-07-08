@@ -25,6 +25,7 @@ Package: gnome-icon-theme
 Architecture: all
 Section: gnome
 Depends: ${misc:Depends},
+         hicolor-icon-theme,
          libgtk-3-bin,
          librsvg2-common
 Breaks: netspeed (<< 0.15.2-2),
