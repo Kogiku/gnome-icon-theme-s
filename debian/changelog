@@ -1,8 +1,14 @@
-gnome-icon-theme (3.0.0-4) UNRELEASED; urgency=low
+gnome-icon-theme (3.0.0-4) unstable; urgency=low
 
+  [ Josselin Mouette ]
   * Add Breaks against mail-notification.
 
- -- Josselin Mouette <joss@debian.org>  Tue, 28 Jun 2011 11:16:19 +0200
+  [ Michael Biebl ]
+  * debian/control.in: Re-add dependency on hicolor-icon-theme so the icon
+    cache is correctly setup for GNOME apps installing icons into
+    /usr/share/icons/hicolor. Closes: #629990
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 08 Jul 2011 05:49:53 +0200
 
 gnome-icon-theme (3.0.0-3) unstable; urgency=low
 
