@@ -2,15 +2,8 @@
 
 set -e
 
-if [ "$1" = "upgrade" ] && [ "$2" = 2.30.0-1 ]; then
-  ( while read name prio; do
-      update-alternatives --remove start-here-32.png /usr/share/icons/gnome/32x32/places/$name.png 2> /dev/null || true
-    done ) << EOF
-debian-swirl 30
-gnome-foot 20
-swirl-foot 20
-EOF
-
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" lt-nl "3.0.0-5"; then
+  update-alternatives --remove start-here.svg /usr/share/icons/gnome/scalable/places/swirl-foot.svg
 fi
 
 #DEBHELPER#
