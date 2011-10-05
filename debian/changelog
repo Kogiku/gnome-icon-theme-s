@@ -8,6 +8,7 @@ gnome-icon-theme (3.2.0-1) UNRELEASED; urgency=low
 
   [ Michael Biebl ]
   * New upstream release.
+  * Update watch file to version 3.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 01:15:39 +0200
 
