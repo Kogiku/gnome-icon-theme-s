@@ -1,11 +1,15 @@
-gnome-icon-theme (3.0.0-5) UNRELEASED; urgency=low
+gnome-icon-theme (3.2.0-1) UNRELEASED; urgency=low
 
+  [ Josselin Mouette ]
   * Drop swirl-foot.svg upon upstream request.
   * prerm:
     + Drop the pre-squeeze upgrade code.
     + Add code to remove the swirl-foot.svg alternative.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 17 Jul 2011 10:48:10 +0200
+  [ Michael Biebl ]
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 01:15:39 +0200
 
 gnome-icon-theme (3.0.0-4) unstable; urgency=low
 
