@@ -1,6 +1,8 @@
 gnome-icon-theme (3.2.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * debian/watch:
+    - Track .xz tarballs.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 19:42:46 +0200
 
