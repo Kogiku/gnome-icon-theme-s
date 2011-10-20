@@ -1,8 +1,8 @@
-gnome-icon-theme (3.2.1.2-1) UNRELEASED; urgency=low
+gnome-icon-theme (3.2.1.2-1) unstable; urgency=low
 
   * New upstream release.
 
- -- Michael Biebl <biebl@debian.org>  Thu, 20 Oct 2011 07:55:08 +0200
+ -- Michael Biebl <biebl@debian.org>  Thu, 20 Oct 2011 08:03:09 +0200
 
 gnome-icon-theme (3.2.1-1) unstable; urgency=low
 
