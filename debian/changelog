@@ -1,9 +1,54 @@
-gnome-icon-theme (3.0.0-3) UNRELEASED; urgency=low
+gnome-icon-theme (3.2.1.2-1) unstable; urgency=low
 
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 20 Oct 2011 08:03:09 +0200
+
+gnome-icon-theme (3.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    - Track .xz tarballs.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 19:46:24 +0200
+
+gnome-icon-theme (3.2.0-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Drop swirl-foot.svg upon upstream request.
+  * prerm:
+    + Drop the pre-squeeze upgrade code.
+    + Add code to remove the swirl-foot.svg alternative.
+
+  [ Michael Biebl ]
+  * New upstream release.
+  * Update watch file to version 3.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 23:09:02 +0200
+
+gnome-icon-theme (3.0.0-4) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Add Breaks against mail-notification.
+
+  [ Michael Biebl ]
+  * debian/control.in: Re-add dependency on hicolor-icon-theme so the icon
+    cache is correctly setup for GNOME apps installing icons into
+    /usr/share/icons/hicolor. Closes: #629990
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 08 Jul 2011 05:49:53 +0200
+
+gnome-icon-theme (3.0.0-3) unstable; urgency=low
+
+  [ Martin Pitt ]
   * debian/watch: Move to *.bz2, upstream does not release .gz tarballs any
     more.
 
- -- Martin Pitt <mpitt@debian.org>  Tue, 31 May 2011 08:29:30 +0200
+  [ Michael Biebl ]
+  * debian/control.in: Add Vcs-* fields.
+  * Bump debhelper compatibility level to 8. Update Build-Depends accordingly.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 21 Jun 2011 00:04:30 +0200
 
 gnome-icon-theme (3.0.0-2) experimental; urgency=low
 

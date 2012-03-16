@@ -7,8 +7,8 @@ Source: gnome-icon-theme
 Section: gnome
 Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Frederic Peters <fpeters@debian.org>, Sebastian Dröge <slomo@debian.org>
-Build-Depends: debhelper (>= 5),
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Frederic Peters <fpeters@debian.org>, Michael Biebl <biebl@debian.org>
+Build-Depends: debhelper (>= 8),
                cdbs,
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
@@ -18,17 +18,21 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin
 Standards-Version: 3.9.2
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-icon-theme
+Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/desktop/unstable/gnome-icon-theme
 
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
 Depends: ${misc:Depends},
+         hicolor-icon-theme,
          libgtk-3-bin,
          librsvg2-common
 Breaks: netspeed (<< 0.15.2-2),
         rhythmbox (<< 0.12.8),
         evolution (<< 2.30),
-        gnome-games (<< 1:2.30.2-1)
+        gnome-games (<< 1:2.30.2-1),
+        mail-notification (<< 5.4.dfsg.1-2.2)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
  This package contains the default icon theme used by the GNOME desktop.
