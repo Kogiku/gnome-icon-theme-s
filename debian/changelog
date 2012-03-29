@@ -1,8 +1,8 @@
-gnome-icon-theme (3.4.0-1) UNRELEASED; urgency=low
+gnome-icon-theme (3.4.0-1) experimental; urgency=low
 
   * New upstream release.
 
- -- Michael Biebl <biebl@debian.org>  Thu, 29 Mar 2012 10:43:54 +0200
+ -- Michael Biebl <biebl@debian.org>  Thu, 29 Mar 2012 10:46:27 +0200
 
 gnome-icon-theme (3.3.91-1) experimental; urgency=low
 
