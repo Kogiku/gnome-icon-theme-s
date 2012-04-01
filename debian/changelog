@@ -1,8 +1,9 @@
 gnome-icon-theme (3.4.0-2) UNRELEASED; urgency=low
 
   * Upload to unstable.
+  * Bump Standards-Version to 3.9.3.
 
- -- Michael Biebl <biebl@debian.org>  Sun, 01 Apr 2012 06:18:04 +0200
+ -- Michael Biebl <biebl@debian.org>  Sun, 01 Apr 2012 06:19:20 +0200
 
 gnome-icon-theme (3.4.0-1) experimental; urgency=low
 
