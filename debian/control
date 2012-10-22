@@ -7,7 +7,7 @@ Source: gnome-icon-theme
 Section: gnome
 Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Frederic Peters <fpeters@debian.org>, Michael Biebl <biebl@debian.org>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Frederic Peters <fpeters@debian.org>, Martin Pitt <mpitt@debian.org>, Michael Biebl <biebl@debian.org>
 Build-Depends: debhelper (>= 8),
                cdbs,
                gnome-pkg-tools (>= 0.10)
@@ -17,7 +17,7 @@ Build-Depends-Indep: gettext,
                      libgtk2.0-bin,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-icon-theme
 Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/desktop/unstable/gnome-icon-theme
 
