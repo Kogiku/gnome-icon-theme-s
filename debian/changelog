@@ -1,3 +1,9 @@
+gnome-icon-theme (3.7.91-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Sat, 23 Mar 2013 16:57:07 +0100
+
 gnome-icon-theme (3.6.0-1) experimental; urgency=low
 
   * Team upload
