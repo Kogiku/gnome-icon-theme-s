@@ -1,6 +1,7 @@
 gnome-icon-theme (3.8.2-2) UNRELEASED; urgency=low
 
   * Upload to unstable.
+  * Bump Standards-Version to 3.9.4. No further changes.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 16 Jun 2013 19:59:02 +0200
 
