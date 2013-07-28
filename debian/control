@@ -19,7 +19,7 @@ Build-Depends-Indep: gettext,
                      librsvg2-bin
 Standards-Version: 3.9.4
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-icon-theme
-Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/desktop/unstable/gnome-icon-theme
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-icon-theme
 
 Package: gnome-icon-theme
 Architecture: all
