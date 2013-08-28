@@ -1,9 +1,10 @@
-gnome-icon-theme (3.8.3-1) UNRELEASED; urgency=low
+gnome-icon-theme (3.8.3-1) unstable; urgency=low
 
+  [ Jeremy Bicha ]
   * New upstream release
   * debian/rules: No longer necessary to remove icon-theme.cache manually
 
- -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 31 Jul 2013 09:13:49 -0400
+ -- Michael Biebl <biebl@debian.org>  Wed, 28 Aug 2013 12:48:03 +0200
 
 gnome-icon-theme (3.8.2-2) unstable; urgency=low
 
