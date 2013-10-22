@@ -1,12 +1,9 @@
-gnome-icon-theme (3.10.0-1) UNRELEASED; urgency=low
-
-  [ Jeremy Bicha ]
-  * New upstream release (3.9.5) (actually same as 3.8.3)
+gnome-icon-theme (3.10.0-1) unstable; urgency=low
 
   [ Jackson Doak ]
-  * New upstream release (3.10.0) (build fixes)
+  * New upstream release (build fixes)
 
- -- Jackson Doak <noskcaj@ubuntu.com>  Mon, 21 Oct 2013 14:05:38 +1100
+ -- Michael Biebl <biebl@debian.org>  Wed, 23 Oct 2013 00:51:59 +0200
 
 gnome-icon-theme (3.8.3-1) unstable; urgency=low
 
