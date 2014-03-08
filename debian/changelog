@@ -1,3 +1,31 @@
+gnome-icon-theme (3.11.5-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 08 Mar 2014 12:16:47 +1100
+
+gnome-icon-theme (3.10.0-1) unstable; urgency=low
+
+  [ Jackson Doak ]
+  * New upstream release (build fixes)
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 23 Oct 2013 00:51:59 +0200
+
+gnome-icon-theme (3.8.3-1) unstable; urgency=low
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * debian/rules: No longer necessary to remove icon-theme.cache manually
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 28 Aug 2013 12:48:03 +0200
+
+gnome-icon-theme (3.8.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Bump Standards-Version to 3.9.4. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 16 Jun 2013 20:01:00 +0200
+
 gnome-icon-theme (3.8.2-1) experimental; urgency=low
 
   [ Josselin Mouette ]
