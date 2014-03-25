@@ -1,9 +1,10 @@
-gnome-icon-theme (3.11.5-1) UNRELEASED; urgency=medium
+gnome-icon-theme (3.12.0-1) unstable; urgency=medium
 
+  [ Jackson Doak ]
   * New upstream release
   * debian/control: Bump standards-version to 3.9.5 (no changes)
 
- -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 08 Mar 2014 12:16:47 +1100
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 25 Mar 2014 10:20:18 +0100
 
 gnome-icon-theme (3.10.0-1) unstable; urgency=low
 
