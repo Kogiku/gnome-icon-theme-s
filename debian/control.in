@@ -19,6 +19,7 @@ Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-icon-theme
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
+Multi-arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
          libgtk-3-bin,

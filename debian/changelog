@@ -1,3 +1,10 @@
+gnome-icon-theme (3.12.0-2) UNRELEASED; urgency=medium
+
+  * Add "Multi-arch: foreign" (Closes: #762035)
+    Thanks to David Kozub.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 18 Sep 2014 21:36:51 +0200
+
 gnome-icon-theme (3.12.0-1) unstable; urgency=medium
 
   [ Jackson Doak ]

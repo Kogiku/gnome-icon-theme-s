@@ -2,7 +2,6 @@
 # 
 # Modifications should be made to debian/control.in instead.
 # This file is regenerated automatically in the clean target.
-
 Source: gnome-icon-theme
 Section: gnome
 Priority: optional
@@ -24,6 +23,7 @@ Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-icon-theme
 Package: gnome-icon-theme
 Architecture: all
 Section: gnome
+Multi-arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
          libgtk-3-bin,
