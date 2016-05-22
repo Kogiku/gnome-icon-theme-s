@@ -12,23 +12,17 @@ Build-Depends-Indep: gettext,
                      gtk-update-icon-cache,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-icon-theme
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-icon-theme
 
 Package: gnome-icon-theme
 Architecture: all
-Section: gnome
 Multi-arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
          gtk-update-icon-cache,
          librsvg2-common
-Breaks: netspeed (<< 0.15.2-2),
-        rhythmbox (<< 0.12.8),
-        evolution (<< 2.30),
-        gnome-games (<< 1:2.30.2-1),
-        mail-notification (<< 5.4.dfsg.1-2.2)
 Enhances: nautilus (>= 2.2)
 Description: GNOME Desktop icon theme
  This package contains the default icon theme used by the GNOME desktop.

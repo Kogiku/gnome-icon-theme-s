@@ -3,7 +3,7 @@ set -e
 
 write_cache()
 {
-if [ -x /usr/bin/gtk-update-icon-cache ]; then
+if which gtk-update-icon-cache >/dev/null 2>&1 ; then
     if ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome; then
         echo "WARNING: icon cache generation failed"
     fi
