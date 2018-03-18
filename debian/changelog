@@ -1,3 +1,12 @@
+gnome-icon-theme (3.12.0-3) UNRELEASED; urgency=medium
+
+  * Update Vcs fields for conversion to git & move to
+    https://salsa.debian.org/
+  * Add debian/gbp.conf
+  * Bump Standards-Version to 4.1.3
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 17 Mar 2018 21:59:18 -0400
+
 gnome-icon-theme (3.12.0-2) unstable; urgency=medium
 
   [ Andreas Henriksson ]
@@ -271,16 +280,16 @@ gnome-icon-theme (2.26.0-1) unstable; urgency=low
 gnome-icon-theme (2.24.0-4) unstable; urgency=low
 
   * Add missing build-dependency on librsvg2-bin.
-  * start-here.svg: fix the colors so that they match the original 
+  * start-here.svg: fix the colors so that they match the original
     Debian swirl, and integrate better.
   * Rebuild against a recent icon-naming-utils. Closes: #514995.
-  * Rename start-here.svg to swirl-foot.svg, also provide a 
+  * Rename start-here.svg to swirl-foot.svg, also provide a
     debian-swirl.svg icon.
-  * Use alternatives to select the default icon, the highest priority 
+  * Use alternatives to select the default icon, the highest priority
     goes to debian-swirl according to the poll. Closes: #516566.
   * Handle icon caches by hand; pass --no-act to dh_icons.
     Closes: #484684.
-  * Register a trigger so that the cache is regerenerated when 
+  * Register a trigger so that the cache is regerenerated when
     necessary.
   * Depend on libgtk2.0-bin to have gtk-update-icon-cache.
 
@@ -347,7 +356,7 @@ gnome-icon-theme (2.18.0-3) unstable; urgency=low
   [ Josselin Mouette ]
   * Include gnome-mime-application-vnd.ms-word links for 22x22 and 24x24
     sizes.
-  * Conflict with gnome-panel < 2.18 and gnome-themes-extras < 
+  * Conflict with gnome-panel < 2.18 and gnome-themes-extras <
     0.9.0.deb0.1 (closes: #422933).
 
  -- Josselin Mouette <joss@debian.org>  Wed, 09 May 2007 10:32:35 +0200
@@ -503,7 +512,7 @@ gnome-icon-theme (2.8.0-1) unstable; urgency=low
   * Acknowledge the NMU, thanks Steve (Closes: #275570).
   * New upstream release.
   * debian/gnome-icon-theme.links:
-    - added a link to the new mime for word file, should fix the problem with 
+    - added a link to the new mime for word file, should fix the problem with
       the icons used in nautilus.
   * debian/watch:
     - added.
@@ -529,7 +538,7 @@ gnome-icon-theme (1.2.3-1) unstable; urgency=low
 gnome-icon-theme (1.2.1-2) unstable; urgency=low
 
   * GNOME Team Upload.
-  * Upload to unstable. 
+  * Upload to unstable.
 
  -- Sebastien Bacher <seb128@debian.org>  Sat, 22 May 2004 14:44:24 +0200
 
@@ -556,7 +565,7 @@ gnome-icon-theme (1.2.0-1) experimental; urgency=low
     + Depends on hicolor-icon-theme
     + Gnome Team changes
     + updated Standards-Version
-  
+
  -- Sebastien Bacher <seb128@debian.org>  Fri, 26 Mar 2004 01:02:32 +0100
 
 gnome-icon-theme (1.1.3-1) unstable; urgency=low
