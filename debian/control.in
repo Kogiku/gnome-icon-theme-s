@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
 Uploaders: @GNOME_TEAM@
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 11),
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),
