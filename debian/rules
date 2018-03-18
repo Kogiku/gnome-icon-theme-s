@@ -22,3 +22,6 @@ override_dh_install:
 			rsvg-convert -w $$i -h $$i -o $(INSTDIR)/$$d/places/debian-swirl.png debian/debian-swirl.svg ; \
 		fi ; \
 	done
+	# These categories icons conflict with gnome-control-center's own icon
+	# https://gitlab.gnome.org/GNOME/gnome-control-center/issues/3
+	find -name gnome-control-center* -delete -print
