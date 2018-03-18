@@ -8,7 +8,6 @@ Priority: optional
 Maintainer: Josselin Mouette <joss@debian.org>
 Uploaders: Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>, Sjoerd Simons <sjoerd@debian.org>
 Build-Depends: debhelper (>= 8),
-               cdbs,
                gnome-pkg-tools (>= 0.10)
 Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),

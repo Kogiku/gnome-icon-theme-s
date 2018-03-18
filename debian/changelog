@@ -3,6 +3,7 @@ gnome-icon-theme (3.12.0-3) UNRELEASED; urgency=medium
   * Update Vcs fields for conversion to git & move to
     https://salsa.debian.org/
   * Add debian/gbp.conf
+  * Convert from cdbs to dh
   * Bump Standards-Version to 4.1.3
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 17 Mar 2018 21:59:18 -0400

@@ -1,19 +1,18 @@
 #!/usr/bin/make -f
-
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/gnome.mk
-include /usr/share/cdbs/1/rules/utils.mk
-include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
 BITMAPS := $(shell ls gnome | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
-INSTDIR := $(CURDIR)/debian/gnome-icon-theme/usr/share/icons/gnome
+INSTDIR := debian/gnome-icon-theme/usr/share/icons/gnome
 
-DEB_DH_ICONS_ARGS := --no-act
+%:
+	dh $@ --with gnome
 
-install/gnome-icon-theme::
-	rm -r $(CURDIR)/debian/gnome-icon-theme/usr/share/locale
+override_dh_icons:
+	dh_icons --no-act
+
+override_dh_install:
+	rm -r debian/gnome-icon-theme/usr/share/locale
 	mkdir -p $(INSTDIR)/scalable/places
 	cp debian/*.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
