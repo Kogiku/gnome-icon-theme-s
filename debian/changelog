@@ -1,4 +1,4 @@
-gnome-icon-theme (3.12.0-3) UNRELEASED; urgency=medium
+gnome-icon-theme (3.12.0-3) unstable; urgency=medium
 
   * Update Vcs fields for conversion to git & move to
     https://salsa.debian.org/
@@ -9,7 +9,7 @@ gnome-icon-theme (3.12.0-3) UNRELEASED; urgency=medium
   * Don't install gnome-control-center categories icons since
     they will override gnome-control-center's own app icon
 
- -- Jeremy Bicha <jbicha@debian.org>  Sat, 17 Mar 2018 21:59:18 -0400
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 17 Mar 2018 22:42:44 -0400
 
 gnome-icon-theme (3.12.0-2) unstable; urgency=medium
 
