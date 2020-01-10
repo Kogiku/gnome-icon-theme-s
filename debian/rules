@@ -1,18 +1,17 @@
 #!/usr/bin/make -f
--include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
-BITMAPS := $(shell ls gnome | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
+BITMAPS := $(shell ls gnome-slate | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
-INSTDIR := debian/gnome-icon-theme/usr/share/icons/gnome
+INSTDIR := debian/gnome-icon-theme-slate/usr/share/icons/gnome-slate
 
 %:
-	dh $@ --with gnome
+	dh $@
 
 override_dh_icons:
 	dh_icons --no-act
 
 override_dh_install:
-	rm -r debian/gnome-icon-theme/usr/share/locale
+	rm -r debian/gnome-icon-theme-slate/usr/share/locale
 	mkdir -p $(INSTDIR)/scalable/places
 	cp debian/*.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \

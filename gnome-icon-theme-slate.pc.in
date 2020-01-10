@@ -1,0 +1,6 @@
+Name: gnome-icon-theme-slate
+Description: slate blue recolor of the GNOME Desktop icon theme
+Version: @VERSION@
+Requires:
+Libs:
+Cflags:

@@ -1,3 +1,14 @@
+gnome-icon-theme-slate (1.0.0-1) UNRELEASED; urgency=medium
+
+  * New upstream maintainer/release (recolor fork) & New package maintainer.
+  * Bump debhelper compat to 12
+  * Bump Standards-Version to 4.4.1
+  * d/copyright:
+    + Update to copyright format version 1.0
+    + Add self.
+
+ -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Thu, 09 Jan 2020 19:05:11 -0600
+
 gnome-icon-theme (3.12.0-3) unstable; urgency=medium
 
   * Update Vcs fields for conversion to git & move to
