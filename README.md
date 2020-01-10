@@ -1,0 +1,1 @@
+# GNOME Icon Theme Slate
