@@ -1,4 +1,4 @@
-gnome-icon-theme-slate (1.0.0-1) UNRELEASED; urgency=medium
+gnome-icon-theme-slate (3.12.0-1) UNRELEASED; urgency=medium
 
   * New upstream maintainer/release (recolor fork) & New package maintainer.
   * Bump debhelper compat to 12
