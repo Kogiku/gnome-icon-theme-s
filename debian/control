@@ -3,7 +3,6 @@ Section: gnome
 Priority: optional
 Maintainer: Kogiku <10516420+Kogiku@users.noreply.github.com>
 Build-Depends:
- debhelper (>= 12),
  debhelper-compat (= 12),
 Build-Depends-Indep:
  gettext,
