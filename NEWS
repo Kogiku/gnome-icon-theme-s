@@ -1,9 +1,9 @@
-3.12.0
-  - forked and recolored to slate blue
+3.12.0s
+  - recolored to slate blue
   - renamed from 'gnome-icon-theme' to 'gnome-icon-theme-slate'
-  - {16x16-24x24}/actions/document-save.png linked to
+  - {16x16-48x48}/actions/document-save.png linked to
     ../devices/media-floppy.png
-  - {16x16-24x24}/actions/document-save-as.png changed to a floppy w/ pencil
+  - {16x16-48x48}/actions/document-save-as.png changed to a floppy w/ pencil
   - emblems/emblem-default.png linked to
     places/preferences-desktop-default-applications.png
 
