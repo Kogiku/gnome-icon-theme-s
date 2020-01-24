@@ -1,7 +1,7 @@
 # GNOME Icon Theme Slate
 Slate blue recolor of the default icon theme used by the GNOME desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
 ![Preview](https://raw.githubusercontent.com/Kogiku/gnome-icon-theme-slate/master/preview.png)
-<sub>Preview Details: Theme: [Vertex](https://github.com/oberon-manjaro/vertex-theme) | Desktop Environment: MATE 1.22.2 | Font: DejaVu Sans</sub>
+<sub>Preview Details: Theme: [Vertex](https://github.com/oberon-manjaro/vertex-theme) | File Manager: Caja 1.22.3 | Font: DejaVu Sans</sub>
 ## Installation
 ### Packages
 |Distro|Package Name/Link|
