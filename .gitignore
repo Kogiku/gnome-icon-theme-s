@@ -1,0 +1,14 @@
+autom4te.cache
+src/Makefile
+src/Makefile.in
+po/*.gmo
+aclocal.m4
+compile
+config.*
+configure
+gnome-icon-theme-slate.pc
+index.theme
+install-sh
+Makefile
+Makefile.in
+missing
