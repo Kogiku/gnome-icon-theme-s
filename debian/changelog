@@ -1,3 +1,13 @@
+gnome-icon-theme-slate (3.12.0.1s-1) unstable; urgency=medium
+
+  * New upstream verion.
+  * See NEWS for changes.
+  * d/control:
+    + Bump Standards-Version to 4.5.0.
+    + Bump debhelper-compat to level 13.
+
+ -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Fri, 24 Jan 2020 17:33:37 -0600
+
 gnome-icon-theme-slate (3.12.0s-1) unstable; urgency=medium
 
   * New upstream/package maintainer (recolor fork).

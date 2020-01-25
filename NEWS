@@ -1,3 +1,8 @@
+3.12.0.1s
+  - move places/preferences-desktop-default-applications.png to
+    apps/preferences-desktop-default-applications.png
+  - remove generated autoconf files & add 'autogen.sh' script
+
 3.12.0s
   - recolored to slate blue
   - renamed from 'gnome-icon-theme' to 'gnome-icon-theme-slate'

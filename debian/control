@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Kogiku <10516420+Kogiku@users.noreply.github.com>
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
 Build-Depends-Indep:
  gettext,
  intltool (>= 0.40.0),
@@ -11,7 +11,7 @@ Build-Depends-Indep:
  gtk-update-icon-cache,
  icon-naming-utils (>= 0.8.7),
  librsvg2-bin,
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Homepage: https://github.com/Kogiku/gnome-icon-theme-slate
 Vcs-Git: git://github.com/Kogiku/gnome-icon-theme-slate
 Vcs-Browser: https://github.com/Kogiku/gnome-icon-theme-slate
