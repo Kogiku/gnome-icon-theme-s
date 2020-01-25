@@ -6,8 +6,8 @@ Slate blue recolor of the default icon theme used by the GNOME desktop. The icon
 ### Packages
 |Distro|Package Name/Link|
 |:----:|:----:|
-| Debian | [gnome-icon-theme-slate_3.12.0s-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0s/gnome-icon-theme-slate_3.12.0s-1_all.deb) |
-| any | [gnome-icon-theme-slate_3.12.0s.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0s/gnome-icon-theme-slate_3.12.0s.tar.bz2) (extract to `~/.icons`)|
+| Debian | [gnome-icon-theme-slate_3.12.0.1s-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.1s/gnome-icon-theme-slate_3.12.0.1s-1_all.deb) |
+| any | [gnome-icon-theme-slate_3.12.0.1s.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.1s/gnome-icon-theme-slate_3.12.0.1s.tar.bz2) (extract to `~/.icons`)|
 ### Manual Installation
 The following packages are required to build
 * `autoconf`
