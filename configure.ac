@@ -4,12 +4,11 @@ AC_PREREQ(2.53)
 AC_INIT([gnome-icon-theme-slate], [3.12.0.1s],
         [https://github.com/Kogiku/gnome-icon-theme-slate/issues])
 AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_SRCDIR([index.theme.in.in])
+AC_CONFIG_SRCDIR([index.theme.in])
 
 AM_INIT_AUTOMAKE([1.9 dist-xz no-dist-gzip tar-ustar foreign])
 
 PKG_PROG_PKG_CONFIG([0.19])
-IT_PROG_INTLTOOL([0.40.0])
 
 GETTEXT_PACKAGE="${PACKAGE}"
 AC_SUBST(GETTEXT_PACKAGE)
@@ -66,7 +65,6 @@ fi
 AC_CONFIG_FILES([
 Makefile
 gnome-icon-theme-slate.pc
-po/Makefile.in
 src/Makefile
 ])
 

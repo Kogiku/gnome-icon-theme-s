@@ -1,15 +1,15 @@
 DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
 
-SUBDIRS = po $(SVGSRCDIR)
+SUBDIRS = $(SVGSRCDIR)
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-theme_in_files = index.theme.in.in
-theme_DATA = $(theme_in_files:.theme.in.in=.theme)
+theme_in_files = index.theme.in
+theme_DATA = $(theme_in_files:.theme.in=.theme)
 
 THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$(SVGOUTDIR)/$$size/* -type d`; do printf "$$dir,"; done; done; echo "scalable/actions,scalable/apps,scalable/devices,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status,scalable/categories")
 
-%.theme.in: %.theme.in.in $(SVGOUTDIR) Makefile
+%.theme: %.theme.in $(SVGOUTDIR) Makefile
 	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/gnome-slate/##g'`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	for dir in `echo $$dirs | sed -e "s/,/ /g"`; do \
@@ -69,12 +69,9 @@ THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `
 		echo "" >> $@; \
 	done
 
-@INTLTOOL_THEME_RULE@
-
 # we don't want to install mo files, all translations are already stored
 # in theme files
 install-data-local:
-	$(MAKE) -C po uninstall
 	if [ -h $(DESTDIR)$(themedir) ]; then \
 		rm -f $(DESTDIR)$(themedir); \
 	fi
@@ -116,6 +113,4 @@ MAINTAINERCLEANFILES =			\
 	libtool				\
 	ltmain.sh			\
 	missing				\
-	mkinstalldirs			\
-	po/Makefile.in.in		\
-	po/$(GETTEXT_PACKAGE).pot
+	mkinstalldirs
