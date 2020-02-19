@@ -6,7 +6,6 @@ Build-Depends:
  debhelper-compat (= 13),
 Build-Depends-Indep:
  gettext,
- intltool (>= 0.40.0),
  pkg-config,
  gtk-update-icon-cache,
  icon-naming-utils (>= 0.8.7),

@@ -6,18 +6,17 @@ Slate blue recolor of the default icon theme used by the GNOME desktop. The icon
 ### Packages
 |Distro|Package Name/Link|
 |:----:|:----:|
-| Debian | [gnome-icon-theme-slate_3.12.0.1s-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.1s/gnome-icon-theme-slate_3.12.0.1s-1_all.deb) |
-| any | [gnome-icon-theme-slate_3.12.0.1s.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.1s/gnome-icon-theme-slate_3.12.0.1s.tar.bz2) (extract to `~/.icons`)|
+| Debian | [gnome-icon-theme-slate_3.12.0.2s-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.2s/gnome-icon-theme-slate_3.12.0.2s-1_all.deb) |
+| any | [gnome-icon-theme-slate_3.12.0.2s.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-slate/releases/download/3.12.0.2s/gnome-icon-theme-slate_3.12.0.2s.tar.bz2) (extract to `~/.icons`)|
 ### Manual Installation
 The following packages are required to build
 * `autoconf`
 * `automake`
 * `icon-naming-utils`
-* `intltool`
 * `pkg-config` or `pkgconfig` for Fedora
 * `gettext`
-* `git` to clone the source directory
 * `gtk-update-icon-cache`
+* `git` to clone the source directory
 #### 1. Get the source
 ```
 git clone https://github.com/Kogiku/gnome-icon-theme-slate

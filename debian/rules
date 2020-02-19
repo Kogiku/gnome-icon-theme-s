@@ -13,7 +13,6 @@ override_dh_icons:
 	dh_icons --no-act
 
 override_dh_install:
-	rm -r debian/gnome-icon-theme-slate/usr/share/locale
 	mkdir -p $(INSTDIR)/scalable/places
 	cp debian/*.svg $(INSTDIR)/scalable/places/
 	for i in $(BITMAPS); do \
