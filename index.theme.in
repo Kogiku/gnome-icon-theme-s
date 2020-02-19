@@ -1,5 +1,6 @@
 [Icon Theme]
 Name=GNOME Slate
+Inherits=Adwaita,hicolor
 Comment=Slate Blue GNOME Icon Theme
 Example=folder
 
