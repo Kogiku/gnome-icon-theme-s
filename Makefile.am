@@ -87,11 +87,7 @@ install-data-hook:
 uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
 
-pkgconfigdir = $(datadir)/pkgconfig
-pkgconfig_DATA = gnome-icon-theme-slate.pc
-
 EXTRA_DIST =			\
-	gnome-icon-theme-slate.pc.in  \
 	gnome-slate			\
 	COPYING_CCBYSA3		\
 	COPYING_LGPL		\

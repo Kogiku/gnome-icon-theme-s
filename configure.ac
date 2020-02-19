@@ -3,7 +3,6 @@ AC_PREREQ(2.53)
 
 AC_INIT([gnome-icon-theme-slate], [3.12.0.2s],
         [https://github.com/Kogiku/gnome-icon-theme-slate/issues])
-AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([index.theme.in])
 
 AM_INIT_AUTOMAKE([1.9 dist-xz no-dist-gzip tar-ustar foreign])
@@ -12,8 +11,6 @@ PKG_PROG_PKG_CONFIG([0.19])
 
 GETTEXT_PACKAGE="${PACKAGE}"
 AC_SUBST(GETTEXT_PACKAGE)
-localedir='$(prefix)/$(DATADIRNAME)/locale'
-AC_SUBST(localedir)
 
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
@@ -30,10 +27,10 @@ AC_SUBST([render_sizes], ["8x8 16x16 22x22 24x24 32x32 48x48 256x256"])
 
 # Allow icon mapping to be disabled
 AC_ARG_ENABLE([icon-mapping],
-	AC_HELP_STRING([--enable-icon-mapping],
-			[Enable compatibility symlinks [default=auto]]),
-	[enable_mapping=$enableval],
-	[enable_mapping=yes])
+   AC_HELP_STRING([--enable-icon-mapping],
+                  [Enable compatibility symlinks [default=auto]]),
+                  [enable_mapping=$enableval],
+                  [enable_mapping=yes])
 
 ICONMAP="true"
 if test "x$enable_mapping" != "xno"; then
@@ -61,7 +58,6 @@ AC_PATH_PROG(GTK_UPDATE_ICON_CACHE, gtk-update-icon-cache)
 
 AC_CONFIG_FILES([
 Makefile
-gnome-icon-theme-slate.pc
 src/Makefile
 ])
 
