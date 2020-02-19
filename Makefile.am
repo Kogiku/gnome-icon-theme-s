@@ -69,8 +69,6 @@ THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `
 		echo "" >> $@; \
 	done
 
-# we don't want to install mo files, all translations are already stored
-# in theme files
 install-data-local:
 	if [ -h $(DESTDIR)$(themedir) ]; then \
 		rm -f $(DESTDIR)$(themedir); \
@@ -83,6 +81,30 @@ install-data-hook:
 	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
 		$(GTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
 	fi
+
+install-exec-hook:
+	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../emblems/emblem-default.png \
+		preferences-desktop-default-applications.png)
+	(cd $(DESTDIR)$(themedir)/22x22/apps; ln -sf ../emblems/emblem-default.png \
+		preferences-desktop-default-applications.png)
+	(cd $(DESTDIR)$(themedir)/24x24/apps; ln -sf ../emblems/emblem-default.png \
+		preferences-desktop-default-applications.png)
+	(cd $(DESTDIR)$(themedir)/32x32/apps; ln -sf ../emblems/emblem-default.png \
+		preferences-desktop-default-applications.png)
+	(cd $(DESTDIR)$(themedir)/48x48/apps; ln -sf ../emblems/emblem-default.png \
+		preferences-desktop-default-applications.png)
+	(cd $(DESTDIR)$(themedir)/16x16/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
+	(cd $(DESTDIR)$(themedir)/22x22/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
+	(cd $(DESTDIR)$(themedir)/24x24/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
+	(cd $(DESTDIR)$(themedir)/32x32/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
+	(cd $(DESTDIR)$(themedir)/48x48/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
+	(cd $(DESTDIR)$(themedir)/256x256/actions; ln -sf ../devices/media-floppy.png \
+		document-save.png)
 
 uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
