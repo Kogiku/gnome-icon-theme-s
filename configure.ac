@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([gnome-icon-theme-slate], [3.12.0.2s],
+AC_INIT([gnome-icon-theme-slate], [3.12.0.3s],
         [https://github.com/Kogiku/gnome-icon-theme-slate/issues])
 AC_CONFIG_SRCDIR([index.theme.in])
 
