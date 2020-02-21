@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: GNOME Icon Theme Slate
-Upstream-Source: https://github.com/Kogiku/gnome-icon-theme-slate
+Upstream-Name: GNOME Icon Theme S
+Upstream-Source: https://github.com/Kogiku/gnome-icon-theme-s
 Source: Original: https://download.gnome.org/sources/gnome-icon-theme/
 
 Files: *
@@ -17,6 +17,13 @@ Copyright:
                          Andreas Nilsson <nisses.mail@home.se>,
                          Jakub Steiner <jimmac@novell.com>
  Copyright (C) 2020 Kogiku <10516420+Kogiku@users.noreply.github.com>
+License: GPL-3 or CC-BY-SA-3.0
+
+Files: gnome-sakura/Makefile.am
+       gnome-seafoam/Makefile.am
+       gnome-stardust/Makefile.am
+       gnome-steel/Makefile.am
+Copyright: Copyright (C) 2014 Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-3 or CC-BY-SA-3.0
 
 Files: debian/*

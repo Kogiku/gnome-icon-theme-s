@@ -1,6 +1,10 @@
 DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
 
-SUBDIRS = $(SVGSRCDIR)
+SUBDIRS = $(SVGSRCDIR) \
+	gnome-seafoam \
+	gnome-sakura \
+	gnome-stardust \
+	gnome-steel
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
@@ -77,11 +81,6 @@ install-data-local:
 		touch $(DESTDIR)$(themedir); \
 	fi
 
-install-data-hook:
-	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
-		$(GTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
-	fi
-
 install-exec-hook:
 	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../emblems/emblem-default.png \
 		preferences-desktop-default-applications.png)
@@ -106,29 +105,38 @@ install-exec-hook:
 	(cd $(DESTDIR)$(themedir)/256x256/actions; ln -sf ../devices/media-floppy.png \
 		document-save.png)
 
+install-data-hook:
+	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
+		$(GTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
+	fi
+
 uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
 
-EXTRA_DIST =			\
-	gnome-slate			\
-	COPYING_CCBYSA3		\
-	COPYING_LGPL		\
+EXTRA_DIST = \
+	gnome-sakura \
+	gnome-slate \
+	gnome-stardust \
+	gnome-seafoam \
+	gnome-steel \
+	COPYING_CCBYSA3 \
+	COPYING_LGPL \
 	$(theme_in_files)
 
-CLEANFILES = 			\
+CLEANFILES = \
 	$(theme_DATA)
 
-MAINTAINERCLEANFILES =			\
-	Makefile.in			\
-	aclocal.m4			\
-	config.guess			\
-	config.h.in			\
-	config.sub			\
-	configure			\
-	depcomp				\
-	install-sh			\
-	intltool-*.in			\
-	libtool				\
-	ltmain.sh			\
-	missing				\
+MAINTAINERCLEANFILES = \
+	Makefile.in \
+	aclocal.m4 \
+	config.guess \
+	config.h.in \
+	config.sub \
+	configure \
+	depcomp \
+	install-sh \
+	intltool-*.in \
+	libtool \
+	ltmain.sh \
+	missing \
 	mkinstalldirs

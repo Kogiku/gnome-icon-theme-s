@@ -1,8 +1,8 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([gnome-icon-theme-slate], [3.12.0.3s],
-        [https://github.com/Kogiku/gnome-icon-theme-slate/issues])
+AC_INIT([gnome-icon-theme-s], [3.12.0.3s],
+        [https://github.com/Kogiku/gnome-icon-theme-s/issues])
 AC_CONFIG_SRCDIR([index.theme.in])
 
 AM_INIT_AUTOMAKE([1.9 dist-xz no-dist-gzip tar-ustar foreign])
@@ -19,7 +19,7 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 AC_SUBST(themedir, "\${datadir}/icons/gnome-slate")
 
 # Input and Output dirs for the rendering
-AC_SUBST(SVGSRCDIR, "src")
+AC_SUBST(SVGSRCDIR, "src/fullcolor")
 AC_SUBST(SVGOUTDIR, "gnome-slate")
 
 # Icon sizes we want to install
@@ -46,7 +46,7 @@ if test "x$enable_mapping" != "xno"; then
    else
       AC_MSG_RESULT([no])
       AC_MSG_ERROR([icon-naming-utils >= $UTILS_REQUIRED is required to build
-                    and install gnome-icon-theme-slate])
+                    and install gnome-icon-theme-s])
    fi
 else
    ICONMAP="false"
@@ -58,7 +58,11 @@ AC_PATH_PROG(GTK_UPDATE_ICON_CACHE, gtk-update-icon-cache)
 
 AC_CONFIG_FILES([
 Makefile
-src/Makefile
+gnome-sakura/Makefile
+gnome-seafoam/Makefile
+gnome-stardust/Makefile
+gnome-steel/Makefile
+src/fullcolor/Makefile
 ])
 
 AC_OUTPUT

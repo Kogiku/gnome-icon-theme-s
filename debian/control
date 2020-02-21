@@ -1,4 +1,4 @@
-Source: gnome-icon-theme-slate
+Source: gnome-icon-theme-s
 Section: gnome
 Priority: optional
 Maintainer: Kogiku <10516420+Kogiku@users.noreply.github.com>
@@ -15,7 +15,7 @@ Homepage: https://github.com/Kogiku/gnome-icon-theme-slate
 Vcs-Git: git://github.com/Kogiku/gnome-icon-theme-slate
 Vcs-Browser: https://github.com/Kogiku/gnome-icon-theme-slate
 
-Package: gnome-icon-theme-slate
+Package: gnome-icon-theme-s
 Architecture: all
 Multi-Arch: foreign
 Depends:
@@ -25,7 +25,14 @@ Depends:
  librsvg2-common,
 Enhances: nautilus (>= 2.2)
 Description: slate blue recolor of the GNOME Desktop icon theme
- This package contains a slate blue recolor of the default icon theme used by
+ This package contains recolors of the default icon theme used by
  the GNOME desktop. The icons are used in the panel menu, and in nautilus and
  other applications, to represent the different applications, files,
  directories, and devices.
+ .
+ Color variants include:
+ * Sakura (pink)
+ * Seafoam (teal)
+ * Slate (blueish)
+ * Stardust (purple)
+ * Steel (grey).

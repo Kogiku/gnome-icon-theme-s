@@ -1,4 +1,4 @@
-GNOME slate recolor:
+GNOME recolors:
 	Kogiku <10516420+Kogiku@users.noreply.github.com>
 
 GNOME developers:
@@ -16,3 +16,6 @@ GNOME developers:
 
 Some external 3D Assets used:
 	Geraldo Cockerhan - http://www.blendswap.com/blends/view/40495 CCBYSA
+
+Some code was borrowed from the MATE developers:
+	https://github.com/mate-desktop/mate-icon-theme/graphs/contributors
