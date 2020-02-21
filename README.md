@@ -13,8 +13,8 @@ Color variants include:
 ### Packages
 |Distro|Package Name/Link|
 |:----:|:----:|
-| Debian | [gnome-icon-theme-s_3.12.0.4-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.3s/gnome-icon-theme-s_3.12.0.4-1_all.deb) |
-| any | [gnome-icon-theme-s_3.12.0.4.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.3s/gnome-icon-theme-s_3.12.0.4.tar.bz2) (extract to `~/.icons`)|
+| Debian | [gnome-icon-theme-s_3.12.0.4-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.4/gnome-icon-theme-s_3.12.0.4-1_all.deb) |
+| any | [gnome-icon-theme-s_3.12.0.4.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.4/gnome-icon-theme-s_3.12.0.4.tar.bz2) (extract to `~/.icons`)|
 ### Manual Installation
 The following packages are required to build
 * `autoconf`
