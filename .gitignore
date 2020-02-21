@@ -1,13 +1,14 @@
 autom4te.cache
-src/Makefile
-src/Makefile.in
 aclocal.m4
 compile
 config.*
 configure
-gnome-icon-theme-slate.pc
 index.theme
 install-sh
 Makefile
 Makefile.in
 missing
+!gnome-sakura/index.theme
+!gnome-seafoam/index.theme
+!gnome-stardust/index.theme
+!gnome-steel/index.theme
