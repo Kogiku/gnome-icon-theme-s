@@ -4,7 +4,7 @@
 
 BITMAPS := $(shell ls gnome-slate | sed -rn 's/^([0-9]+)x[0-9]+$$/\1/p')
 
-INSTDIR := debian/gnome-icon-theme-slate/usr/share/icons/gnome-slate
+INSTDIR := debian/gnome-icon-theme-s/usr/share/icons/gnome-slate
 
 %:
 	dh $@
