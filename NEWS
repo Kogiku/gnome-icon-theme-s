@@ -1,3 +1,7 @@
+3.12.0.5
+  - fix gnome-seafoam/16x16/places/{folder-download,folder-music}
+  - update render-icon-theme.py for inkscape 1.0
+
 3.12.0.4
   - more colors: sakura (pink), seafoam (teal), stardust (purple), steel (grey)
   - renamed from 'gnome-icon-theme-slate' to 'gnome-icon-theme-s'
