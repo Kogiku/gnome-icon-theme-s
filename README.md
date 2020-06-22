@@ -1,5 +1,5 @@
 # GNOME Icon Theme S
-Recolors of the default icon theme used by the GNOME desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
+Solf recolors of the default icon theme used by the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
 
 Color variants include:
 * Sakura (pink)
