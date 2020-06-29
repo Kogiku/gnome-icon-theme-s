@@ -8,7 +8,7 @@ import subprocess
 INKSCAPE = '/usr/bin/inkscape'
 OPTIPNG = '/usr/bin/optipng'
 ZOPFLIPNG = '/usr/bin/zopflipng'
-SRC = os.path.join('.', 'src', 'fullcolor')
+SRC = os.path.join('.', 'src')
 
 inkscape_process = None
 
@@ -125,7 +125,16 @@ class ContentHandler(xml.sax.ContentHandler):
                 height = rect['height']
                 id = rect['id']
 
-                dir = os.path.join("gnome-slate", "%sx%s" % (width, height), self.context)
+                if self.path == './src/folders-sakura.svg':
+                    dir = os.path.join('gnome-sakura', "%sx%s" % (width, height), self.context)
+                elif self.path == './src/folders-seafoam.svg':
+                    dir = os.path.join('gnome-seafoam', "%sx%s" % (width, height), self.context)
+                elif self.path == './src/folders-stardust.svg':
+                    dir = os.path.join('gnome-stardust', "%sx%s" % (width, height), self.context)
+                elif self.path == './src/folders-steel.svg':
+                    dir = os.path.join('gnome-steel', "%sx%s" % (width, height), self.context)
+                else:
+                    dir = os.path.join('gnome-slate', "%sx%s" % (width, height), self.context)
                 outfile = os.path.join(dir, self.icon_name+'.png')
                 if not os.path.exists(dir):
                     os.makedirs(dir)
