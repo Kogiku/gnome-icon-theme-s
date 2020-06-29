@@ -2,6 +2,7 @@
   - link apps/preferences-desktop-display.png to
     apps/mate-preferences-desktop-display.png
   - add preferences-system-time icon
+  - add highres input-gaming from Adwaita 3.13.91
 
 3.12.0.5
   - fix gnome-seafoam/16x16/places/{folder-download,folder-music}
