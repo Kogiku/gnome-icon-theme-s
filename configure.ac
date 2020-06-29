@@ -19,7 +19,7 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 AC_SUBST(themedir, "\${datadir}/icons/gnome-slate")
 
 # Input and Output dirs for the rendering
-AC_SUBST(SVGSRCDIR, "src/fullcolor")
+AC_SUBST(SVGSRCDIR, "src")
 AC_SUBST(SVGOUTDIR, "gnome-slate")
 
 # Icon sizes we want to install
@@ -62,7 +62,7 @@ gnome-sakura/Makefile
 gnome-seafoam/Makefile
 gnome-stardust/Makefile
 gnome-steel/Makefile
-src/fullcolor/Makefile
+src/Makefile
 ])
 
 AC_OUTPUT
