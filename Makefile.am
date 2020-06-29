@@ -104,6 +104,18 @@ install-exec-hook:
 		document-save.png)
 	(cd $(DESTDIR)$(themedir)/256x256/actions; ln -sf ../devices/media-floppy.png \
 		document-save.png)
+	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/22x22/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/24x24/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/32x32/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/48x48/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/256x256/apps; ln -sf ../apps/preferences-desktop-display.png \
+		mate-preferences-desktop-display.png)
 
 install-data-hook:
 	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
