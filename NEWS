@@ -1,9 +1,9 @@
+3.12.0.6
   - fix gtk size field warnings
-  - link apps/preferences-desktop-display.png to
-    apps/mate-preferences-desktop-display.png
+  - link apps/preferences-desktop-display.png to apps/mate-preferences-desktop-display.png
   - add preferences-system-time icon
-  - add highres input-gaming from Adwaita 3.13.91
-  - add highres mail-send from mate-icon-theme
+  - add hires input-gaming icon from Adwaita 3.13.91
+  - add hires mail-send from the MATE icontheme
   - sakura: shift color to be slightly less red
 
 3.12.0.5

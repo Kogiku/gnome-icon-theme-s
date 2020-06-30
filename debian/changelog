@@ -1,3 +1,10 @@
+gnome-icon-theme-s (3.12.0.6-1) unstable; urgency=medium
+
+  * New version.
+  * See NEWS for changes. 
+
+ -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Tue, 30 Jun 2020 08:27:08 -0500
+
 gnome-icon-theme-s (3.12.0.5-1) unstable; urgency=medium
 
   * New version.
@@ -656,4 +663,3 @@ gnome-icon-theme (0.91-1) unstable; urgency=low
   * Initial Release, moved from nautilus 2.1.91 source.
 
  -- Takuo KITAME <kitame@debian.org>  Fri, 17 Jan 2003 14:57:28 +0900
-
