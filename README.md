@@ -1,4 +1,7 @@
-# GNOME Icon Theme S
+<h1 align="center">
+  <img src=".github/gnome-icon-theme-s.png" alt="GNOME Icon Theme S" />
+</h1>
+
 Soft recolors of the default icon theme used by the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
 
 Color variants include:
@@ -7,8 +10,6 @@ Color variants include:
 * Slate (blueish)
 * Stardust (purple)
 * Steel (grey).
-### Preview
-![Preview](https://raw.githubusercontent.com/Kogiku/gnome-icon-theme-s/master/preview.png)
 ## Installation
 ### Packages
 |Distro|Package Name/Link|
