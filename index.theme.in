@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=GNOME Slate
-Inherits=Adwaita,hicolor
+Inherits=Adwaita,gnome,hicolor
 Comment=Slate Blue GNOME Icon Theme
 Example=folder
 
@@ -22,4 +22,3 @@ PanelSizes=16,22,32,48,64,72,96,128
 
 # Directory list
 Directories=@THEME_DIRS@
-

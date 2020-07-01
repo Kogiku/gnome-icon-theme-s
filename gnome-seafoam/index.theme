@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=GNOME Seafoam
-Inherits=gnome-slate,Adwaita,hicolor
+Inherits=gnome-slate,Adwaita,gnome,hicolor
 Comment=Teal GNOME Icon Theme
 Example=folder
 
