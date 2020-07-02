@@ -126,12 +126,20 @@ class ContentHandler(xml.sax.ContentHandler):
                 id = rect['id']
 
                 if self.path == './src/folders-sakura.svg':
+                    if not os.path.exists('gnome-sakura'):
+                        os.mkdir('gnome-sakura')
                     dir = os.path.join('gnome-sakura', "%sx%s" % (width, height), self.context)
                 elif self.path == './src/folders-seafoam.svg':
+                    if not os.path.exists('gnome-seafoam'):
+                        os.mkdir('gnome-seafoam')
                     dir = os.path.join('gnome-seafoam', "%sx%s" % (width, height), self.context)
                 elif self.path == './src/folders-stardust.svg':
+                    if not os.path.exists('gnome-stardust'):
+                        os.mkdir('gnome-stardust')
                     dir = os.path.join('gnome-stardust', "%sx%s" % (width, height), self.context)
                 elif self.path == './src/folders-steel.svg':
+                    if not os.path.exists('gnome-steel'):
+                        os.mkdir('gnome-steel')
                     dir = os.path.join('gnome-steel', "%sx%s" % (width, height), self.context)
                 else:
                     dir = os.path.join('gnome-slate', "%sx%s" % (width, height), self.context)
