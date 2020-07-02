@@ -67,6 +67,10 @@ THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `
 			echo "MinSize=56" >> $@; \
 			echo "MaxSize=512" >> $@; \
 			echo "Type=Scalable" >> $@; \
+		elif test "$$size" = "512"; then \
+			echo "MinSize=56" >> $@; \
+			echo "MaxSize=512" >> $@; \
+			echo "Type=Scalable" >> $@; \
 		else \
 			echo "Type=Fixed" >> $@; \
 		fi; \
