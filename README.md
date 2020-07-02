@@ -22,7 +22,6 @@ The following packages are required to build
 * `automake`
 * `icon-naming-utils`
 * `pkg-config` or `pkgconfig` for Fedora
-* `gettext`
 * `gtk-update-icon-cache`
 * `git` to clone the source directory
 #### 1. Get the source

@@ -9,9 +9,6 @@ AM_INIT_AUTOMAKE([1.9 dist-xz no-dist-gzip tar-ustar foreign])
 
 PKG_PROG_PKG_CONFIG([0.19])
 
-GETTEXT_PACKAGE="${PACKAGE}"
-AC_SUBST(GETTEXT_PACKAGE)
-
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
