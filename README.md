@@ -14,7 +14,7 @@ Color variants:
 #### Some major difference from 3.12.0
 * More colors to choose from.
 * Save and save-as cabinet icons were replaced with floppy icons.
-* Additional icons were added from souces such Adwaita and MATE icon themes.
+* Additional icons were added from sources such Adwaita and MATE icon themes.
 * Translations were removed for easy maintenance.
 ## Installation
 ### Packages
