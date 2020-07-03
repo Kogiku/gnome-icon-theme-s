@@ -133,6 +133,10 @@ class ContentHandler(xml.sax.ContentHandler):
                     if not os.path.exists('gnome-seafoam'):
                         os.mkdir('gnome-seafoam')
                     dir = os.path.join('gnome-seafoam', "%sx%s" % (width, height), self.context)
+                elif self.path == './src/folders-slate.svg':
+                    if not os.path.exists('gnome-slate'):
+                        os.mkdir('gnome-slate')
+                    dir = os.path.join('gnome-slate', "%sx%s" % (width, height), self.context)
                 elif self.path == './src/folders-stardust.svg':
                     if not os.path.exists('gnome-stardust'):
                         os.mkdir('gnome-stardust')
@@ -142,7 +146,7 @@ class ContentHandler(xml.sax.ContentHandler):
                         os.mkdir('gnome-steel')
                     dir = os.path.join('gnome-steel', "%sx%s" % (width, height), self.context)
                 else:
-                    dir = os.path.join('gnome-slate', "%sx%s" % (width, height), self.context)
+                    dir = os.path.join('gnome-legacy', "%sx%s" % (width, height), self.context)
                 outfile = os.path.join(dir, self.icon_name+'.png')
                 if not os.path.exists(dir):
                     os.makedirs(dir)
@@ -166,8 +170,8 @@ class ContentHandler(xml.sax.ContentHandler):
         self.chars += chars.strip()
 
 if len(sys.argv) == 1:
-    if not os.path.exists('gnome-slate'):
-        os.mkdir('gnome-slate')
+    if not os.path.exists('gnome-legacy'):
+        os.mkdir('gnome-legacy')
     print ('Rendering from SVGs in', SRC)
     for file in os.listdir(SRC):
         if file[-4:] == '.svg':

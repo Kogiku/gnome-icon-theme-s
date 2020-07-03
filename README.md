@@ -2,14 +2,20 @@
   <img src=".github/gnome-icon-theme-s.png" alt="GNOME Icon Theme S" />
 </h1>
 
-Soft recolors of the default icon theme used by the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
+Updated version of the icon theme that was used by the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
 
-Color variants include:
+Color variants:
+* legacy (3.12 original)
 * Sakura (pink)
 * Seafoam (teal)
 * Slate (blueish)
 * Stardust (purple)
-* Steel (grey).
+* Steel (grey)
+#### Some major difference from 3.12.0
+* More colors to choose from.
+* Save and save-as cabinet icons were replaced with floppy icons.
+* Additional icons were added from souces such Adwaita and MATE icon themes.
+* Translations were removed for easy maintenance.
 ## Installation
 ### Packages
 |Distro|Package Name/Link|
@@ -23,7 +29,6 @@ The following packages are required to build
 * `icon-naming-utils`
 * `pkg-config` or `pkgconfig` for Fedora
 * `gtk-update-icon-cache`
-* `git` to clone the source directory
 #### 1. Get the source
 ```
 git clone https://github.com/Kogiku/gnome-icon-theme-s

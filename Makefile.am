@@ -1,8 +1,9 @@
 DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
 
 SUBDIRS = $(SVGSRCDIR) \
-	gnome-seafoam \
 	gnome-sakura \
+	gnome-seafoam \
+	gnome-slate \
 	gnome-stardust \
 	gnome-steel
 
@@ -14,7 +15,7 @@ theme_DATA = $(theme_in_files:.theme.in=.theme)
 THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$(SVGOUTDIR)/$$size/* -type d`; do printf "$$dir,"; done; done; echo "scalable/actions,scalable/apps,scalable/devices,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status,scalable/categories")
 
 %.theme: %.theme.in $(SVGOUTDIR) Makefile
-	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/gnome-slate/##g'`"; \
+	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/gnome-legacy/##g'`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	for dir in `echo $$dirs | sed -e "s/,/ /g"`; do \
 		sizefull="`dirname $$dir`"; \
@@ -142,10 +143,11 @@ uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
 
 EXTRA_DIST = \
+	gnome-legacy \
 	gnome-sakura \
+	gnome-seafoam \
 	gnome-slate \
 	gnome-stardust \
-	gnome-seafoam \
 	gnome-steel \
 	COPYING_CCBYSA3 \
 	COPYING_LGPL \

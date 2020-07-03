@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=GNOME Sakura
-Inherits=gnome-slate,Adwaita,gnome,hicolor
+Inherits=gnome-legacy,Adwaita,gnome,hicolor
 Comment=Pink GNOME Icon Theme
 Example=folder
 

@@ -13,11 +13,11 @@ PKG_PROG_PKG_CONFIG([0.19])
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
 # Define the toplevel path here
-AC_SUBST(themedir, "\${datadir}/icons/gnome-slate")
+AC_SUBST(themedir, "\${datadir}/icons/gnome-legacy")
 
 # Input and Output dirs for the rendering
 AC_SUBST(SVGSRCDIR, "src")
-AC_SUBST(SVGOUTDIR, "gnome-slate")
+AC_SUBST(SVGOUTDIR, "gnome-legacy")
 
 # Icon sizes we want to install
 AC_SUBST([render_sizes], ["8x8 16x16 22x22 24x24 32x32 48x48 256x256 512x512"])
@@ -57,6 +57,7 @@ AC_CONFIG_FILES([
 Makefile
 gnome-sakura/Makefile
 gnome-seafoam/Makefile
+gnome-slate/Makefile
 gnome-stardust/Makefile
 gnome-steel/Makefile
 src/Makefile

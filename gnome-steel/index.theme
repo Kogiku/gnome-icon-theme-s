@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=GNOME Steel
-Inherits=gnome-slate,Adwaita,gnome,hicolor
+Inherits=gnome-legacy,Adwaita,gnome,hicolor
 Comment=Grey/Gray GNOME Icon Theme
 Example=folder
 

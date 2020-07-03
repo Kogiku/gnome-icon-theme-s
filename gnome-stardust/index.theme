@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=GNOME Stardust
-Inherits=gnome-slate,Adwaita,gnome,hicolor
+Inherits=gnome-legacy,Adwaita,gnome,hicolor
 Comment=Purple GNOME Icon Theme
 Example=folder
 

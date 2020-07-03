@@ -4,7 +4,7 @@ set -e
 write_cache()
 {
 if which gtk-update-icon-cache >/dev/null 2>&1 ; then
-    if ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-slate; then
+    if ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-legacy; then
         echo "WARNING: icon cache generation failed"
     fi
 fi
@@ -15,12 +15,12 @@ if [ "$1" = "triggered" ]; then
     exit 0
 fi
 
-SIZES=$(ls /usr/share/icons/gnome-slate/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p')
+SIZES=$(ls /usr/share/icons/gnome-legacy/*/places | sed -rn 's,^.*/([0-9]+)x[0-9]+/.*$,\1,p')
 
 ( while read name prio; do
-    command="update-alternatives --install /usr/share/icons/gnome-slate/scalable/places/start-here.svg start-here.svg /usr/share/icons/gnome-slate/scalable/places/$name.svg $prio"
+    command="update-alternatives --install /usr/share/icons/gnome-legacy/scalable/places/start-here.svg start-here.svg /usr/share/icons/gnome-legacy/scalable/places/$name.svg $prio"
     for s in $SIZES; do
-      command="$command --slave /usr/share/icons/gnome-slate/${s}x${s}/places/start-here.png start-here-${s}.png /usr/share/icons/gnome-slate/${s}x${s}/places/$name.png"
+      command="$command --slave /usr/share/icons/gnome-legacy/${s}x${s}/places/start-here.png start-here-${s}.png /usr/share/icons/gnome-legacy/${s}x${s}/places/$name.png"
     done
     $command
   done ) << EOF

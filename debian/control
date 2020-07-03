@@ -10,9 +10,9 @@ Build-Depends-Indep:
  icon-naming-utils (>= 0.8.7),
  librsvg2-bin,
 Standards-Version: 4.5.0
-Homepage: https://github.com/Kogiku/gnome-icon-theme-slate
-Vcs-Git: git://github.com/Kogiku/gnome-icon-theme-slate
-Vcs-Browser: https://github.com/Kogiku/gnome-icon-theme-slate
+Homepage: https://github.com/Kogiku/gnome-icon-theme-s
+Vcs-Git: git://github.com/Kogiku/gnome-icon-theme-s
+Vcs-Browser: https://github.com/Kogiku/gnome-icon-theme-s
 
 Package: gnome-icon-theme-s
 Architecture: all
@@ -26,15 +26,15 @@ Recommends:
  adwaita-icon-theme | gnome-icon-theme-symbolic,
 Enhances:
  nautilus (>= 2.2)
-Description: soft recolors of the GNOME 3.12 icon theme
- This package contains soft recolors of the default icon theme used by
- the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus
- and other applications, to represent the different applications, files,
- directories, and devices.
+Description: updated GNOME 3.12 icon theme with soft color variants
+ Updated version of the icon theme that was used by the GNOME 3.12 desktop.
+ The icons are used in the panel menu, and in nautilus and other applications,
+ to represent the different applications, files, directories, and devices.
  .
  Color variants include:
- * Sakura (pink)
- * Seafoam (teal)
- * Slate (blueish)
- * Stardust (purple)
- * Steel (grey).
+  * legacy (3.12 original)
+  * Sakura (pink)
+  * Seafoam (teal)
+  * Slate (blueish)
+  * Stardust (purple)
+  * Steel (grey)

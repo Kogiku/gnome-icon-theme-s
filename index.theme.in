@@ -1,7 +1,7 @@
 [Icon Theme]
-Name=GNOME Slate
+Name=GNOME Legacy
 Inherits=Adwaita,gnome,hicolor
-Comment=Slate Blue GNOME Icon Theme
+Comment=Legacy GNOME Icon Theme
 Example=folder
 
 # KDE Specific Stuff

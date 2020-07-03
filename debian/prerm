@@ -3,9 +3,9 @@ set -e
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
   for name in debian-swirl gnome-foot; do
-    update-alternatives --remove start-here.svg /usr/share/icons/gnome-slate/scalable/places/$name.svg
+    update-alternatives --remove start-here.svg /usr/share/icons/gnome-legacy/scalable/places/$name.svg
   done
-  rm -f /usr/share/icons/gnome-slate/icon-theme.cache
+  rm -f /usr/share/icons/gnome-legacy/icon-theme.cache
 fi
 
 #DEBHELPER#
