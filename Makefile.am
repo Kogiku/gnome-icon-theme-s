@@ -120,6 +120,18 @@ install-exec-hook:
 		mate-preferences-desktop-display.png)
 	(cd $(DESTDIR)$(themedir)/256x256/apps; ln -sf ../apps/preferences-desktop-display.png \
 		mate-preferences-desktop-display.png)
+	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
+	(cd $(DESTDIR)$(themedir)/22x22/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
+	(cd $(DESTDIR)$(themedir)/24x24/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
+	(cd $(DESTDIR)$(themedir)/32x32/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
+	(cd $(DESTDIR)$(themedir)/48x48/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
+	(cd $(DESTDIR)$(themedir)/256x256/apps; ln -sf ../apps/text-x-preview.png \
+		application-x-generic.png)
 
 install-data-hook:
 	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
