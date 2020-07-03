@@ -10,5 +10,6 @@ Makefile.in
 missing
 !gnome-sakura/index.theme
 !gnome-seafoam/index.theme
+!gnome-slate/index.theme
 !gnome-stardust/index.theme
 !gnome-steel/index.theme
