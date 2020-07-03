@@ -5,16 +5,16 @@
 Updated version of the icon theme that was used by the GNOME 3.12 desktop. The icons are used in the panel menu, and in nautilus and other applications, to represent the different applications, files, directories, and devices.
 
 Color variants:
-* legacy (3.12 original)
-* Sakura (pink)
-* Seafoam (teal)
-* Slate (blueish)
-* Stardust (purple)
-* Steel (grey)
-#### Some major difference from 3.12.0
+* [Legacy](src/folders.svg) (3.12 original)
+* [Sakura](src/folders-sakura.svg) (pink)
+* [Seafoam](src/folders-seafoam.svg) (teal)
+* [Slate](src/folders-slate.svg) (blueish)
+* [Stardust](src/folders-stardust.svg) (purple)
+* [Steel](src/folders-steel.svg) (grey)
+### Some notable differences from 3.12.0
 * More colors to choose from.
 * Save and save-as cabinet icons were replaced with floppy icons.
-* Additional icons were added from sources such Adwaita and MATE icon themes.
+* Additional icons were added from sources such as the [Adwaita](https://github.com/GNOME/adwaita-icon-theme) and [MATE](https://github.com/mate-desktop/mate-icon-theme) icon themes.
 * Translations were removed for easy maintenance.
 ## Installation
 ### Packages
