@@ -15,7 +15,7 @@ install-data-local:
 		cd $(DESTDIR)$(themedir); \
 		for size in `find . -mindepth 1 -maxdepth 1 -type d | sed s@./@@`; do \
 			cd $$size || continue ; \
-			echo -e "Going to set up icon mapping for $$size"; \
+			echo "Going to set up icon mapping for $$size"; \
 			for dir in `find . -type d`; do \
 				context="`echo $$dir | cut -c 3-`"; \
 				if [ $$context ]; then \
