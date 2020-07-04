@@ -87,52 +87,25 @@ install-data-local:
 	fi
 
 install-exec-hook:
-	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../emblems/emblem-default.png \
-		preferences-desktop-default-applications.png)
-	(cd $(DESTDIR)$(themedir)/22x22/apps; ln -sf ../emblems/emblem-default.png \
-		preferences-desktop-default-applications.png)
-	(cd $(DESTDIR)$(themedir)/24x24/apps; ln -sf ../emblems/emblem-default.png \
-		preferences-desktop-default-applications.png)
-	(cd $(DESTDIR)$(themedir)/32x32/apps; ln -sf ../emblems/emblem-default.png \
-		preferences-desktop-default-applications.png)
-	(cd $(DESTDIR)$(themedir)/48x48/apps; ln -sf ../emblems/emblem-default.png \
-		preferences-desktop-default-applications.png)
-	(cd $(DESTDIR)$(themedir)/16x16/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/22x22/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/24x24/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/32x32/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/48x48/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/256x256/actions; ln -sf ../devices/media-floppy.png \
-		document-save.png)
-	(cd $(DESTDIR)$(themedir)/16x16/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/22x22/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/24x24/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/32x32/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/48x48/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/256x256/apps; ln -sf ../apps/preferences-desktop-display.png \
-		mate-preferences-desktop-display.png)
-	(cd $(DESTDIR)$(themedir)/16x16/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
-	(cd $(DESTDIR)$(themedir)/22x22/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
-	(cd $(DESTDIR)$(themedir)/24x24/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
-	(cd $(DESTDIR)$(themedir)/32x32/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
-	(cd $(DESTDIR)$(themedir)/48x48/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
-	(cd $(DESTDIR)$(themedir)/256x256/mimetypes; ln -sf ../mimetypes/text-x-preview.png \
-		application-x-generic.png)
+	for size in $(render_sizes); do \
+	    sdir=$(DESTDIR)$(themedir)/$$size; \
+	    if [ -d $$sdir/apps -a -f $$sdir/emblems/emblem-default.png ]; then \
+	        (cd $$sdir/apps; ln -sf ../emblems/emblem-default.png \
+	            preferences-desktop-default-applications.png); \
+	    fi; \
+	    if [ -d $$sdir/actions -a -f $$sdir/devices/media-floppy.png ]; then \
+	        (cd $$sdir/actions; ln -sf ../devices/media-floppy.png \
+	            document-save.png); \
+	    fi; \
+	    if [ -f $$sdir/apps/preferences-desktop-display.png ]; then \
+	        (cd $$sdir/apps; ln -sf preferences-desktop-display.png \
+	            mate-preferences-desktop-display.png); \
+	    fi; \
+	    if [ -f $$sdir/mimetypes/text-x-preview.png ]; then \
+	        (cd $$sdir/mimetypes; ln -sf text-x-preview.png \
+	        	application-x-generic.png); \
+	    fi; \
+	done
 
 install-data-hook:
 	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
