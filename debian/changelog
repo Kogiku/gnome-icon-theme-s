@@ -1,7 +1,13 @@
+gnome-icon-theme-s (3.12.0.7-1) UNRELEASED; urgency=medium
+
+  * d/copyright: updated/cleaned for more legibility.
+
+ -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Fri, 03 Jul 2020 19:09:31 -0500
+
 gnome-icon-theme-s (3.12.0.6-1) unstable; urgency=medium
 
   * New version.
-  * See NEWS for changes. 
+  * See NEWS for changes.
 
  -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Tue, 30 Jun 2020 08:27:08 -0500
 

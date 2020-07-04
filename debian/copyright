@@ -3,53 +3,61 @@ Upstream-Name: GNOME Icon Theme S
 Upstream-Source: https://github.com/Kogiku/gnome-icon-theme-s
 Source: Original: https://download.gnome.org/sources/gnome-icon-theme/
 
-Files: *
-Copyright:
- Copyright (C) 2002-2008 Ulisse Perusin <uli.peru@gmail.com>,
-                         Riccardo Buzzotta <raozuzu@yahoo.it>,
-                         Josef Vybíral <cornelius@vybiral.info>,
-                         Hylke Bons <h.bons@student.rug.nl>,
-                         Ricardo González <rick@jinlabs.com>,
-                         Lapo Calamandrei <calamandrei@gmail.com>,
-                         Rodney Dawes <dobey@novell.com>,
-                         Luca Ferretti <elle.uca@libero.it>,
-                         Tuomas Kuosmanen <tigert@gimp.org>,
-                         Andreas Nilsson <nisses.mail@home.se>,
-                         Jakub Steiner <jimmac@novell.com>
- Copyright (C) 2020 Kogiku <10516420+Kogiku@users.noreply.github.com>
+
+Files: src/*.svg
+       gnome-legacy/*/*/*.png
+       gnome-sakura/*/*/*.png
+       gnome-seafoam/*/*/*.png
+       gnome-slate/*/*/*.png
+       gnome-steel/*/*/*.png
+       .github/gnome-icon-theme-s.png
+Copyright: 2002-2017, Ulisse Perusin <uli.peru@gmail.com>
+           2002-2017, Riccardo Buzzotta <raozuzu@yahoo.it>
+           2002-2017, Josef Vybíral <cornelius@vybiral.info>
+           2002-2017, Hylke Bons <h.bons@student.rug.nl>
+           2002-2017, Ricardo González <rick@jinlabs.com>
+           2002-2017, Lapo Calamandrei <calamandrei@gmail.com>
+           2002-2017, Rodney Dawes <dobey@novell.com>
+           2002-2017, Luca Ferretti <elle.uca@libero.it>
+           2002-2017, Tuomas Kuosmanen <tigert@gimp.org>
+           2002-2017, Andreas Nilsson <nisses.mail@home.se>
+           2002-2017, Jakub Steiner <jimmac@novell.com>
+           2002-2017, Geraldo Cockerhan
+                      <http://www.blendswap.com/blends/view/40495> CCBYSA
+           2009-2019, Perberos <perberos@gmail.com>
+           2009-2019, Steve Zesch <stevezesch2@gmail.com>
+           2009-2019, Stefano Karapetsas <stefano@karapetsas.com>
+           2020, Kogiku <10516420+Kogiku@users.noreply.github.com>
 License: GPL-3 or CC-BY-SA-3.0
 
-Files: gnome-sakura/Makefile.am
-       gnome-seafoam/Makefile.am
-       gnome-stardust/Makefile.am
-       gnome-steel/Makefile.am
-Copyright: Copyright (C) 2014 Stefano Karapetsas <stefano@karapetsas.com>
+Files: *
+Copyright: *No Copyright*
 License: GPL-3 or CC-BY-SA-3.0
+Comment:
+ Assuming dual licensing as found in COPYING file.
 
 Files: debian/*
-Copyright:
- Copyright (C) 2003 Takuo KITAME <kitame@debian.org>
- Copyright (C) 2004-2018 Sebastien Bacher <seb128@debian.org>,
-                         Jordi Mallach <jordi@debian.org>,
-                         Steve Langasek <vorlon@debian.org>,
-                         Josselin Mouette <joss@debian.org>,
-                         Loic Minier <lool@dooz.org>,
-                         Josselin Mouette <joss@debian.org>,
-                         Marc 'HE' Brockschmidt <he@debian.org>,
-                         Sebastian Dröge <slomo@debian.org>,
-                         Luca Bruno <lethalman88@gmail.com>,
-                         Andrea Veri <andrea.veri89@gmail.com>,
-                         Emilio Pozuelo Monfort <pochu@debian.org>,
-                         Frederic Peters <fpeters@debian.org>,
-                         Martin Pitt <mpitt@debian.org>,
-                         Michael Biebl <biebl@debian.org,
-                         Simon McVittie <smcv@debian.org>,
-                         Sjoerd Simons <sjoerd@debian.org>,
-                         Andreas Henriksson <andreas@fatal.se>,
-                         Jeremy Bicha <jbicha@debian.org>,
-                         Jackson Doak <noskcaj@ubuntu.com>,
-                         Laurent Bigonville <bigon@debian.org>
- Copyright (C) 2020 Kogiku <10516420+Kogiku@users.noreply.github.com>
+Copyright: 2003, Takuo KITAME <kitame@debian.org>
+           2004-2005, Sebastien Bacher <seb128@debian.org>
+           2004, Steve Langasek <vorlon@debian.org>
+           2005, Jordi Mallach <jordi@debian.org>
+           2005-2007, 2009-2011, 2013, Josselin Mouette <joss@debian.org>
+           2005-2007, Loic Minier <lool@dooz.org>
+           2007, Marc 'HE' Brockschmidt <he@debian.org>
+           2007-2008, 2010, Sebastian Dröge <slomo@debian.org>
+           2008-2009, Luca Bruno <lethalman88@gmail.com>
+           2009, Andrea Veri <andrea.veri89@gmail.com>
+           2011, Emilio Pozuelo Monfort <pochu@debian.org>
+           2011, Frederic Peters <fpeters@debian.org>
+           2011, Martin Pitt <mpitt@debian.org>
+           2011-2013, Michael Biebl <biebl@debian.org
+           2012, Simon McVittie <smcv@debian.org>
+           2013, Sjoerd Simons <sjoerd@debian.org>
+           2013-2014, 2016, Andreas Henriksson <andreas@fatal.se>
+           2013, 2018, Jeremy Bicha <jbicha@debian.org>
+           2013-2014, Jackson Doak <noskcaj@ubuntu.com>
+           2016, Laurent Bigonville <bigon@debian.org>
+           2020, Kogiku <10516420+Kogiku@users.noreply.github.com>
 License: GPL-3
 
 License: GPL-3
