@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([gnome-icon-theme-s], [3.12.0.6],
+AC_INIT([gnome-icon-theme-s], [3.12.0.7],
         [https://github.com/Kogiku/gnome-icon-theme-s/issues])
 AC_CONFIG_SRCDIR([index.theme.in])
 

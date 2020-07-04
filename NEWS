@@ -1,3 +1,15 @@
+3.12.0.7
+  - re-add original folder icons as gnome-legacy
+  - inherit symbolic icons from both adwaita or gnome
+  - link mimetypes/text-x-preview to mimetypes/application-x-generic
+  - add mimetypes/application-x-sharedlib
+  - add fullcolor emotes/emote-love from Adwaita icon theme
+  - add fullcolor mimetypes/application-x-firmware Adwaita icon theme
+  - add fullcolor actions/mark-location icon from Adwaita icon theme
+  - build: gettext depend removed since translations were removed in 3.12.0.2s
+  - build: support 512x512 icons
+  - render-icon-theme.py: create theme directories when needed
+
 3.12.0.6
   - fix gtk size field warnings
   - link apps/preferences-desktop-display.png to apps/mate-preferences-desktop-display.png

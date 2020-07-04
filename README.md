@@ -20,8 +20,8 @@ Color variants:
 ### Packages
 |Distro|Package Name/Link|
 |:----:|:----:|
-| Debian | [gnome-icon-theme-s_3.12.0.6-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.6/gnome-icon-theme-s_3.12.0.6-1_all.deb) |
-| any | [gnome-icon-theme-s_3.12.0.6.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.6/gnome-icon-theme-s_3.12.0.6.tar.bz2) (extract to `~/.icons`)|
+| Debian | [gnome-icon-theme-s_3.12.0.7-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.7/gnome-icon-theme-s_3.12.0.7-1_all.deb) |
+| any | [gnome-icon-theme-s_3.12.0.7.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.7/gnome-icon-theme-s_3.12.0.7.tar.bz2) (extract to `~/.icons`)|
 ### Manual Installation
 The following packages are required to build
 * `autoconf`
