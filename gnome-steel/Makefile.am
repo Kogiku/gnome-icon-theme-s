@@ -1,18 +1,18 @@
 # from https://github.com/mate-desktop/mate-icon-theme/blob/master/menta/Makefile.am
 
-themedir = $(datadir)/icons/gnome-steel
+ithemedirstee = $(DESTDIR)$(themedirstee)
 
 install-data-local:
-	$(mkdir_p) $(DESTDIR)$(themedir); \
+	$(mkdir_p) $(ithemedirstee); \
 	for dir in `cd $(top_srcdir)/gnome-steel && find . -type d | sed s/.//`; do \
-		$(mkdir_p) $(DESTDIR)$(themedir)$$dir; \
+		$(mkdir_p) $(ithemedirstee)$$dir; \
 	done; \
 	for file in `cd $(top_srcdir)/gnome-steel && find . -name "*.png" | sed s@./@/@`; do \
-		$(install_sh_DATA) $(top_srcdir)/gnome-steel/$$file $(DESTDIR)$(themedir)/$$file; \
+		$(install_sh_DATA) $(top_srcdir)/gnome-steel/$$file $(ithemedirstee)/$$file; \
 	done; \
-	$(install_sh_DATA) $(top_srcdir)/gnome-steel/index.theme $(DESTDIR)$(themedir)/index.theme; \
+	$(install_sh_DATA) $(top_srcdir)/gnome-steel/index.theme $(ithemedirstee)/index.theme; \
 	if [ $(ICONMAP) != "false" ]; then \
-		cd $(DESTDIR)$(themedir); \
+		cd $(ithemedirstee); \
 		for size in `find . -mindepth 1 -maxdepth 1 -type d | sed s@./@@`; do \
 			cd $$size || continue ; \
 			echo "Going to set up icon mapping for $$size"; \
@@ -28,12 +28,12 @@ install-data-local:
 
 
 uninstall-local:
-	if [ -d "$(DESTDIR)$(themedir)" ]; then \
-		cd $(DESTDIR)$(themedir); \
+	if [ -d "$(ithemedirstee)" ]; then \
+		cd $(ithemedirstee); \
 		for file in `find . -name *.png | sed s@./@/@`; do \
-			rm -f $(DESTDIR)$(themedir)$$file; \
+			rm -f $(ithemedirstee)$$file; \
 		done; \
-		rm -f $(DESTDIR)$(themedir)/index.theme; \
+		rm -f $(ithemedirstee)/index.theme; \
 	fi
 
 MAINTAINERCLEANFILES = \

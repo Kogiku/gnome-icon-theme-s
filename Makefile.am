@@ -1,20 +1,24 @@
+ithemedir = $(DESTDIR)$(themedir)
+ithemedirsaku = $(DESTDIR)$(themedirsaku)
+ithemedirseaf = $(DESTDIR)$(themedirseaf)
+ithemedirslat = $(DESTDIR)$(themedirslat)
+ithemedirstar = $(DESTDIR)$(themedirstar)
+ithemedirstee = $(DESTDIR)$(themedirstee)
+
+ithemedirs = $(ithemedir) $(ithemedirsaku) $(ithemedirseaf) $(ithemedirslat) $(ithemedirstar) $(ithemedirstee)
+
 DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
 
-SUBDIRS = $(SVGSRCDIR) \
-	gnome-sakura \
-	gnome-seafoam \
-	gnome-slate \
-	gnome-stardust \
-	gnome-steel
+SUBDIRS = $(subdirs)
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-theme_in_files = index.theme.in
+theme_in_files = gnome-legacy/index.theme.in
 theme_DATA = $(theme_in_files:.theme.in=.theme)
 
-THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$(SVGOUTDIR)/$$size/* -type d`; do printf "$$dir,"; done; done; echo "scalable/actions,scalable/apps,scalable/devices,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status,scalable/categories")
+THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/gnome-legacy/$$size/* -type d`; do printf "$$dir,"; done; done; echo "scalable/actions,scalable/apps,scalable/devices,scalable/emblems,scalable/mimetypes,scalable/places,scalable/status,scalable/categories")
 
-%.theme: %.theme.in $(SVGOUTDIR) Makefile
+%.theme: %.theme.in gnome-legacy Makefile
 	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/gnome-legacy/##g'`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	for dir in `echo $$dirs | sed -e "s/,/ /g"`; do \
@@ -79,63 +83,56 @@ THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `
 	done
 
 install-data-local:
-	if [ -h $(DESTDIR)$(themedir) ]; then \
-		rm -f $(DESTDIR)$(themedir); \
+	if [ -h $(ithemedir) ]; then \
+		rm -f $(ithemedir); \
 	fi
-	if [ -d $(DESTDIR)$(themedir) ]; then \
-		touch $(DESTDIR)$(themedir); \
+	if [ -d $(ithemedir) ]; then \
+		touch $(ithemedir); \
 	fi
 
 install-exec-hook:
 	for size in $(render_sizes); do \
-		dir0=$(DESTDIR)$(themedir)/$$size; \
-		dir1=$(DESTDIR)$(datadir)/icons/gnome-sakura/$$size; \
-		dir2=$(DESTDIR)$(datadir)/icons/gnome-seafoam/$$size; \
-		dir3=$(DESTDIR)$(datadir)/icons/gnome-slate/$$size; \
-		dir4=$(DESTDIR)$(datadir)/icons/gnome-stardust/$$size; \
-		dir5=$(DESTDIR)$(datadir)/icons/gnome-steel/$$size; \
-		if [ -d $$dir0/apps -a -f $$dir0/emblems/emblem-default.png ]; then \
-			(cd $$dir0/apps; ln -vsf ../emblems/emblem-default.png \
+		if [ -d $(ithemedir)/$$size/apps -a -f $(ithemedir)/$$size/emblems/emblem-default.png ]; then \
+			(cd $(ithemedir)/$$size/apps; ln -vsf ../emblems/emblem-default.png \
 				preferences-desktop-default-applications.png); \
 		fi; \
-			if [ -d $$dir0/actions -a -f $$dir0/devices/media-floppy.png ]; then \
-			(cd $$dir0/actions; ln -vsf ../devices/media-floppy.png \
+			if [ -d $(ithemedir)/$$size/actions -a -f $(ithemedir)/$$size/devices/media-floppy.png ]; then \
+			(cd $(ithemedir)/$$size/actions; ln -vsf ../devices/media-floppy.png \
 				document-save.png); \
 		fi; \
-		if [ -f $$dir0/apps/preferences-desktop-display.png ]; then \
-			(cd $$dir0/apps; ln -vsf preferences-desktop-display.png \
+		if [ -f $(ithemedir)/$$size/apps/preferences-desktop-display.png ]; then \
+			(cd $(ithemedir)/$$size/apps; ln -vsf preferences-desktop-display.png \
 				mate-preferences-desktop-display.png); \
 		fi; \
-		if [ -f $$dir0/mimetypes/text-x-preview.png ]; then \
-			(cd $$dir0/mimetypes; ln -vsf text-x-preview.png \
+		if [ -f $(ithemedir)/$$size/mimetypes/text-x-preview.png ]; then \
+			(cd $(ithemedir)/$$size/mimetypes; ln -vsf text-x-preview.png \
 				application-x-generic.png); \
 		fi; \
-		if [ -d $$dir0/mimetypes -a -f $$dir0/places/folder.png ]; then \
-			for dir in $$dir0 $$dir1 $$dir1 $$dir2 $$dir3 $$dir4 $$dir5; do \
-				if [ ! -d $$dir/mimetypes ]; then \
-					mkdir -v $$dir/mimetypes; \
+		if [ -d $(ithemedir)/$$size/mimetypes -a -f $(ithemedir)/$$size/places/folder.png ]; then \
+			for dir in $(ithemedirs); do \
+				if [ ! -d $$dir/$$size/mimetypes ]; then \
+					mkdir -v $$dir/$$size/mimetypes; \
 				fi; \
-				(cd $$dir/mimetypes; ln -vsf ../places/folder.png \
-				inode-directory.png); \
+				(cd $$dir/$$size/mimetypes; ln -vsf ../places/folder.png \
+					inode-directory.png); \
 			done; \
 		fi; \
 	done
 
 install-data-hook:
-	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
-		$(GTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
-	fi
+	for dir in $(ithemedirs); do \
+		if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
+			$(GTK_UPDATE_ICON_CACHE) -q $$dir; \
+		fi; \
+	done
 
 uninstall-hook:
-	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
+	for dir in $(ithemedirs); do \
+		rm -f  $$dir/icon-theme.cache; \
+	done
 
 EXTRA_DIST = \
-	gnome-legacy \
-	gnome-sakura \
-	gnome-seafoam \
-	gnome-slate \
-	gnome-stardust \
-	gnome-steel \
+	$(subdirs) \
 	COPYING_CCBYSA3 \
 	COPYING_LGPL \
 	$(theme_in_files)

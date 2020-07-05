@@ -3,21 +3,24 @@ AC_PREREQ(2.53)
 
 AC_INIT([gnome-icon-theme-s], [3.12.0.7],
         [https://github.com/Kogiku/gnome-icon-theme-s/issues])
-AC_CONFIG_SRCDIR([index.theme.in])
+AC_CONFIG_SRCDIR([gnome-legacy/index.theme.in])
 
 AM_INIT_AUTOMAKE([1.9 dist-xz no-dist-gzip tar-ustar foreign])
 
 PKG_PROG_PKG_CONFIG([0.19])
 
+AC_SUBST([subdirs], ["gnome-legacy gnome-sakura gnome-seafoam gnome-slate gnome-stardust gnome-steel"])
+
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
-# Define the toplevel path here
+# Define the toplevel paths here
 AC_SUBST(themedir, "\${datadir}/icons/gnome-legacy")
-
-# Input and Output dirs for the rendering
-AC_SUBST(SVGSRCDIR, "src")
-AC_SUBST(SVGOUTDIR, "gnome-legacy")
+AC_SUBST(themedirsaku, "\${datadir}/icons/gnome-sakura")
+AC_SUBST(themedirseaf, "\${datadir}/icons/gnome-seafoam")
+AC_SUBST(themedirslat, "\${datadir}/icons/gnome-slate")
+AC_SUBST(themedirstar, "\${datadir}/icons/gnome-stardust")
+AC_SUBST(themedirstee, "\${datadir}/icons/gnome-steel")
 
 # Icon sizes we want to install
 AC_SUBST([render_sizes], ["8x8 16x16 22x22 24x24 32x32 48x48 256x256 512x512"])
@@ -55,12 +58,12 @@ AC_PATH_PROG(GTK_UPDATE_ICON_CACHE, gtk-update-icon-cache)
 
 AC_CONFIG_FILES([
 Makefile
+gnome-legacy/Makefile
 gnome-sakura/Makefile
 gnome-seafoam/Makefile
 gnome-slate/Makefile
 gnome-stardust/Makefile
 gnome-steel/Makefile
-src/Makefile
 ])
 
 AC_OUTPUT

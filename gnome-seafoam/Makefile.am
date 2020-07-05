@@ -1,18 +1,18 @@
 # from https://github.com/mate-desktop/mate-icon-theme/blob/master/menta/Makefile.am
 
-themedir = $(datadir)/icons/gnome-seafoam
+ithemedirseaf = $(DESTDIR)$(themedirseaf)
 
 install-data-local:
-	$(mkdir_p) $(DESTDIR)$(themedir); \
+	$(mkdir_p) $(ithemedirseaf); \
 	for dir in `cd $(top_srcdir)/gnome-seafoam && find . -type d | sed s/.//`; do \
-		$(mkdir_p) $(DESTDIR)$(themedir)$$dir; \
+		$(mkdir_p) $(ithemedirseaf)$$dir; \
 	done; \
 	for file in `cd $(top_srcdir)/gnome-seafoam && find . -name "*.png" | sed s@./@/@`; do \
-		$(install_sh_DATA) $(top_srcdir)/gnome-seafoam/$$file $(DESTDIR)$(themedir)/$$file; \
+		$(install_sh_DATA) $(top_srcdir)/gnome-seafoam/$$file $(ithemedirseaf)/$$file; \
 	done; \
-	$(install_sh_DATA) $(top_srcdir)/gnome-seafoam/index.theme $(DESTDIR)$(themedir)/index.theme; \
+	$(install_sh_DATA) $(top_srcdir)/gnome-seafoam/index.theme $(ithemedirseaf)/index.theme; \
 	if [ $(ICONMAP) != "false" ]; then \
-		cd $(DESTDIR)$(themedir); \
+		cd $(ithemedirseaf); \
 		for size in `find . -mindepth 1 -maxdepth 1 -type d | sed s@./@@`; do \
 			cd $$size || continue ; \
 			echo "Going to set up icon mapping for $$size"; \
@@ -28,12 +28,12 @@ install-data-local:
 
 
 uninstall-local:
-	if [ -d "$(DESTDIR)$(themedir)" ]; then \
-		cd $(DESTDIR)$(themedir); \
+	if [ -d "$(ithemedirseaf)" ]; then \
+		cd $(ithemedirseaf); \
 		for file in `find . -name *.png | sed s@./@/@`; do \
-			rm -f $(DESTDIR)$(themedir)$$file; \
+			rm -f $(ithemedirseaf)$$file; \
 		done; \
-		rm -f $(DESTDIR)$(themedir)/index.theme; \
+		rm -f $(ithemedirseaf)/index.theme; \
 	fi
 
 MAINTAINERCLEANFILES = \
