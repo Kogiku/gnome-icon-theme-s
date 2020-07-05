@@ -26,15 +26,8 @@ install-data-local:
 		done; \
 	fi
 
-
 uninstall-local:
-	if [ -d "$(ithemedirslat)" ]; then \
-		cd $(ithemedirslat); \
-		for file in `find . -name *.png | sed s@./@/@`; do \
-			rm -f $(ithemedirslat)$$file; \
-		done; \
-		rm -f $(ithemedirslat)/index.theme; \
-	fi
+	rm -rf $(ithemedirslat)
 
 MAINTAINERCLEANFILES = \
 	Makefile.in \

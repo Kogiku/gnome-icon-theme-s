@@ -11,31 +11,50 @@ Color variants:
 * [Slate](src/folders-slate.svg) (blueish)
 * [Stardust](src/folders-stardust.svg) (purple)
 * [Steel](src/folders-steel.svg) (grey)
+
 ### Some notable differences from 3.12.0
 * More colors to choose from.
 * Save and save-as cabinet icons were replaced with floppy icons.
 * Additional icons were added from sources such as the [Adwaita](https://github.com/GNOME/adwaita-icon-theme) and [MATE](https://github.com/mate-desktop/mate-icon-theme) icon themes.
 * Translations were removed for easy maintenance.
+
 ## Installation
 ### Packages
 |Distro|Package Name/Link|
 |:----:|:----:|
 | Debian | [gnome-icon-theme-s_3.12.0.7-1_all.deb](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.7/gnome-icon-theme-s_3.12.0.7-1_all.deb) |
 | any | [gnome-icon-theme-s_3.12.0.7.tar.bz2](https://github.com/Kogiku/gnome-icon-theme-s/releases/download/3.12.0.7/gnome-icon-theme-s_3.12.0.7.tar.bz2) (extract to `~/.icons`)|
-### Manual Installation
-The following packages are required to build
+
+### Manual installation from source
+The following packages are required to build:
 * `autoconf`
 * `automake`
 * `icon-naming-utils`
 * `pkg-config` or `pkgconfig` for Fedora
 * `gtk-update-icon-cache`
-#### 1. Get the source
+#### 1. Get the source using `git`
 ```
 git clone https://github.com/Kogiku/gnome-icon-theme-s
 cd gnome-icon-theme-s
 ```
-#### 2. Build and install
+#### 2. Build and install/uninstall
+System wide (installs to `/usr/share/icons`):
 ```
 ./autogen.sh --prefix=/usr
 sudo make install
+```
+```
+sudo make uninstall
+<< or >>
+sudo rm -rf /usr/share/icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
+```
+Home directory (installs to `~/.local/share/icons`):
+```
+./autogen.sh --prefix=$HOME/.local
+make install
+```
+```
+make uninstall
+<< or >>
+rm -rf ~/.local/share/icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
 ```

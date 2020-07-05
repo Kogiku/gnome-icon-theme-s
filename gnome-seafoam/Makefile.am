@@ -26,15 +26,8 @@ install-data-local:
 		done; \
 	fi
 
-
 uninstall-local:
-	if [ -d "$(ithemedirseaf)" ]; then \
-		cd $(ithemedirseaf); \
-		for file in `find . -name *.png | sed s@./@/@`; do \
-			rm -f $(ithemedirseaf)$$file; \
-		done; \
-		rm -f $(ithemedirseaf)/index.theme; \
-	fi
+	rm -rf $(ithemedirseaf)
 
 MAINTAINERCLEANFILES = \
 	Makefile.in \

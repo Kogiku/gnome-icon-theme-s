@@ -126,11 +126,6 @@ install-data-hook:
 		fi; \
 	done
 
-uninstall-hook:
-	for dir in $(ithemedirs); do \
-		rm -f  $$dir/icon-theme.cache; \
-	done
-
 EXTRA_DIST = \
 	$(subdirs) \
 	COPYING_CCBYSA3 \
