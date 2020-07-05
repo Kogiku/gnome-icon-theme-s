@@ -88,23 +88,37 @@ install-data-local:
 
 install-exec-hook:
 	for size in $(render_sizes); do \
-	    sdir=$(DESTDIR)$(themedir)/$$size; \
-	    if [ -d $$sdir/apps -a -f $$sdir/emblems/emblem-default.png ]; then \
-	        (cd $$sdir/apps; ln -sf ../emblems/emblem-default.png \
-	            preferences-desktop-default-applications.png); \
-	    fi; \
-	    if [ -d $$sdir/actions -a -f $$sdir/devices/media-floppy.png ]; then \
-	        (cd $$sdir/actions; ln -sf ../devices/media-floppy.png \
-	            document-save.png); \
-	    fi; \
-	    if [ -f $$sdir/apps/preferences-desktop-display.png ]; then \
-	        (cd $$sdir/apps; ln -sf preferences-desktop-display.png \
-	            mate-preferences-desktop-display.png); \
-	    fi; \
-	    if [ -f $$sdir/mimetypes/text-x-preview.png ]; then \
-	        (cd $$sdir/mimetypes; ln -sf text-x-preview.png \
-	        	application-x-generic.png); \
-	    fi; \
+		dir0=$(DESTDIR)$(themedir)/$$size; \
+		dir1=$(DESTDIR)$(datadir)/icons/gnome-sakura/$$size; \
+		dir2=$(DESTDIR)$(datadir)/icons/gnome-seafoam/$$size; \
+		dir3=$(DESTDIR)$(datadir)/icons/gnome-slate/$$size; \
+		dir4=$(DESTDIR)$(datadir)/icons/gnome-stardust/$$size; \
+		dir5=$(DESTDIR)$(datadir)/icons/gnome-steel/$$size; \
+		if [ -d $$dir0/apps -a -f $$dir0/emblems/emblem-default.png ]; then \
+			(cd $$dir0/apps; ln -vsf ../emblems/emblem-default.png \
+				preferences-desktop-default-applications.png); \
+		fi; \
+			if [ -d $$dir0/actions -a -f $$dir0/devices/media-floppy.png ]; then \
+			(cd $$dir0/actions; ln -vsf ../devices/media-floppy.png \
+				document-save.png); \
+		fi; \
+		if [ -f $$dir0/apps/preferences-desktop-display.png ]; then \
+			(cd $$dir0/apps; ln -vsf preferences-desktop-display.png \
+				mate-preferences-desktop-display.png); \
+		fi; \
+		if [ -f $$dir0/mimetypes/text-x-preview.png ]; then \
+			(cd $$dir0/mimetypes; ln -vsf text-x-preview.png \
+				application-x-generic.png); \
+		fi; \
+		if [ -d $$dir0/mimetypes -a -f $$dir0/places/folder.png ]; then \
+			for dir in $$dir0 $$dir1 $$dir1 $$dir2 $$dir3 $$dir4 $$dir5; do \
+				if [ ! -d $$dir/mimetypes ]; then \
+					mkdir -v $$dir/mimetypes; \
+				fi; \
+				(cd $$dir/mimetypes; ln -vsf ../places/folder.png \
+				inode-directory.png); \
+			done; \
+		fi; \
 	done
 
 install-data-hook:
