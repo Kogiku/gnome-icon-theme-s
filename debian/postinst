@@ -5,7 +5,17 @@ write_cache()
 {
 if which gtk-update-icon-cache >/dev/null 2>&1 ; then
     if ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-legacy; then
-        echo "WARNING: icon cache generation failed"
+        echo "WARNING: icon cache generation failed for gnome-legacy"
+    elif ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-sakura; then
+        echo "WARNING: icon cache generation failed for gnome-sakura"
+    elif ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-seafoam; then
+        echo "WARNING: icon cache generation failed for gnome-seafoam"
+    elif ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-slate; then
+        echo "WARNING: icon cache generation failed for gnome-slate"
+    elif ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-stardust; then
+        echo "WARNING: icon cache generation failed for gnome-stardust"
+    elif ! gtk-update-icon-cache --force --quiet /usr/share/icons/gnome-steel; then
+        echo "WARNING: icon cache generation failed for gnome-steel"
     fi
 fi
 }

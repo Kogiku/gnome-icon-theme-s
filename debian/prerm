@@ -6,6 +6,11 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
     update-alternatives --remove start-here.svg /usr/share/icons/gnome-legacy/scalable/places/$name.svg
   done
   rm -f /usr/share/icons/gnome-legacy/icon-theme.cache
+  rm -f /usr/share/icons/gnome-sakura/icon-theme.cache
+  rm -f /usr/share/icons/gnome-seafoam/icon-theme.cache
+  rm -f /usr/share/icons/gnome-slate/icon-theme.cache
+  rm -f /usr/share/icons/gnome-stardust/icon-theme.cache
+  rm -f /usr/share/icons/gnome-steel/icon-theme.cache
 fi
 
 #DEBHELPER#
