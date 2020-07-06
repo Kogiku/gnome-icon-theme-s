@@ -1,3 +1,9 @@
+DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
+
+SUBDIRS = $(subdirs)
+
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
+
 ithemedir = $(DESTDIR)$(themedir)
 ithemedirsaku = $(DESTDIR)$(themedirsaku)
 ithemedirseaf = $(DESTDIR)$(themedirseaf)
@@ -6,12 +12,6 @@ ithemedirstar = $(DESTDIR)$(themedirstar)
 ithemedirstee = $(DESTDIR)$(themedirstee)
 
 ithemedirs = $(ithemedir) $(ithemedirsaku) $(ithemedirseaf) $(ithemedirslat) $(ithemedirstar) $(ithemedirstee)
-
-DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
-
-SUBDIRS = $(subdirs)
-
-ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 theme_in_files = gnome-legacy/index.theme.in
 theme_DATA = $(theme_in_files:.theme.in=.theme)
@@ -82,45 +82,37 @@ THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `
 		echo "" >> $@; \
 	done
 
-install-data-local:
-	if [ -h $(ithemedir) ]; then \
-		rm -f $(ithemedir); \
-	fi
-	if [ -d $(ithemedir) ]; then \
-		touch $(ithemedir); \
-	fi
-
-install-exec-hook:
+install-data-hook:
+	echo "Creating symlinks..."; \
 	for size in $(render_sizes); do \
 		if [ -d $(ithemedir)/$$size/apps -a -f $(ithemedir)/$$size/emblems/emblem-default.png ]; then \
-			(cd $(ithemedir)/$$size/apps; ln -vsf ../emblems/emblem-default.png \
+			(cd $(ithemedir)/$$size/apps; ln -sf ../emblems/emblem-default.png \
 				preferences-desktop-default-applications.png); \
 		fi; \
 			if [ -d $(ithemedir)/$$size/actions -a -f $(ithemedir)/$$size/devices/media-floppy.png ]; then \
-			(cd $(ithemedir)/$$size/actions; ln -vsf ../devices/media-floppy.png \
+			(cd $(ithemedir)/$$size/actions; ln -sf ../devices/media-floppy.png \
 				document-save.png); \
 		fi; \
 		if [ -f $(ithemedir)/$$size/apps/preferences-desktop-display.png ]; then \
-			(cd $(ithemedir)/$$size/apps; ln -vsf preferences-desktop-display.png \
+			(cd $(ithemedir)/$$size/apps; ln -sf preferences-desktop-display.png \
 				mate-preferences-desktop-display.png); \
 		fi; \
 		if [ -f $(ithemedir)/$$size/mimetypes/text-x-preview.png ]; then \
-			(cd $(ithemedir)/$$size/mimetypes; ln -vsf text-x-preview.png \
+			(cd $(ithemedir)/$$size/mimetypes; ln -sf text-x-preview.png \
 				application-x-generic.png); \
 		fi; \
 		if [ -d $(ithemedir)/$$size/mimetypes -a -f $(ithemedir)/$$size/places/folder.png ]; then \
 			for dir in $(ithemedirs); do \
 				if [ ! -d $$dir/$$size/mimetypes ]; then \
-					mkdir -v $$dir/$$size/mimetypes; \
+					mkdir $$dir/$$size/mimetypes; \
 				fi; \
-				(cd $$dir/$$size/mimetypes; ln -vsf ../places/folder.png \
+				(cd $$dir/$$size/mimetypes; ln -sf ../places/folder.png \
 					inode-directory.png); \
 			done; \
 		fi; \
-	done
-
-install-data-hook:
+	done; \
 	for dir in $(ithemedirs); do \
+		echo "Creating cache file for: $$dir"; \
 		if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
 			$(GTK_UPDATE_ICON_CACHE) -q $$dir; \
 		fi; \
