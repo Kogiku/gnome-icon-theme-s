@@ -12,11 +12,10 @@ Color variants:
 * [Stardust](src/folders-stardust.svg) (purple)
 * [Steel](src/folders-steel.svg) (grey)
 
-### Some notable differences from 3.12.0
+### Some notable differences relative to gnome-icon-theme 3.12.0:
 * More colors to choose from.
 * Save and save-as cabinet icons were replaced with floppy icons.
 * Additional icons were added from sources such as the [Adwaita](https://github.com/GNOME/adwaita-icon-theme) and [MATE](https://github.com/mate-desktop/mate-icon-theme) icon themes.
-* Translations were removed for easy maintenance.
 
 ## Installation
 ### Packages
@@ -32,29 +31,36 @@ The following packages are required to build:
 * `icon-naming-utils`
 * `pkg-config` or `pkgconfig` for Fedora
 * `gtk-update-icon-cache`
+
 #### 1. Get the source using `git`
 ```
 git clone https://github.com/Kogiku/gnome-icon-theme-s
 cd gnome-icon-theme-s
 ```
-#### 2. Build and install/uninstall
+
+#### 2. Build and install
 System wide (installs to `/usr/share/icons`):
 ```
 ./autogen.sh --prefix=/usr
 sudo make install
-```
-```
-sudo make uninstall
-<< or >>
-sudo rm -rf /usr/share/icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
 ```
 Home directory (installs to `~/.local/share/icons`):
 ```
 ./autogen.sh --prefix=$HOME/.local
 make install
 ```
+#### 3. Uninstall
+Run the following from the source code directory:
 ```
+sudo make uninstall
+<< or >>
 make uninstall
+```
+Or simply remove the icon theme directories:
+```
+sudo rm -rf /usr/share/icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
 << or >>
 rm -rf ~/.local/share/icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
+<< or >>
+rm -rf ~/.icons/gnome-{,legacy,sakura,seafoam,slate,stardust,steel}
 ```
