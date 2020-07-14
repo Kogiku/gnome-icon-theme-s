@@ -1,7 +1,5 @@
 ithemedir = $(DESTDIR)$(themedir)
 
-icon_in_files = $(shell SRCDIR="$(srcdir)"; for i in `find $$SRCDIR -name "*.svg"`; do printf "$$i "; done)
-
 $(render_sizes): Makefile
 
 install-data-local:
@@ -30,10 +28,6 @@ install-data-local:
 
 uninstall-local:
 	rm -rf $(ithemedir)
-
-EXTRA_DIST =			\
-	$(icon_in_files)
-
 
 MAINTAINERCLEANFILES =		\
 	Makefile.in		\
