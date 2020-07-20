@@ -3,6 +3,11 @@ Upstream-Name: GNOME Icon Theme S
 Upstream-Source: https://github.com/Kogiku/gnome-icon-theme-s
 Source: Original: https://download.gnome.org/sources/gnome-icon-theme/
 
+Files: *
+Copyright: *No Copyright*
+License: GPL-3 or CC-BY-SA-3.0
+Comment:
+ Assuming dual licensing as found in COPYING file.
 
 Files: src/*.svg
        gnome-legacy/*/*/*.png
@@ -29,12 +34,6 @@ Copyright: 2002-2017, Ulisse Perusin <uli.peru@gmail.com>
            2009-2019, Stefano Karapetsas <stefano@karapetsas.com>
            2020, Kogiku <10516420+Kogiku@users.noreply.github.com>
 License: GPL-3 or CC-BY-SA-3.0
-
-Files: *
-Copyright: *No Copyright*
-License: GPL-3 or CC-BY-SA-3.0
-Comment:
- Assuming dual licensing as found in COPYING file.
 
 Files: debian/*
 Copyright: 2003, Takuo KITAME <kitame@debian.org>
