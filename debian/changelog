@@ -1,10 +1,12 @@
-gnome-icon-theme-s (3.12.0.8-1) UNRELEASED; urgency=medium
+gnome-icon-theme-s (3.12.0.8-1) unstable; urgency=medium
 
+  * New version.
+  * See NEWS for changes.
   * d/{postinst,prerm}: Run gtk-update-icon-cache for all themes.
   * d/copyright:
     + Fix lintian 'global-files-wildcard-not-first-paragraph-in-dep5-copyright'
 
- -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Sun, 05 Jul 2020 12:43:32 -0500
+ -- Kogiku <10516420+Kogiku@users.noreply.github.com>  Sat, 01 Aug 2020 12:41:29 -0500
 
 gnome-icon-theme-s (3.12.0.7-1) unstable; urgency=medium
 
